@@ -413,11 +413,10 @@ span.suggestionsBack {
 }
 textarea#answer_content,
 .Question_item {
-  width: 329px;
+  width: 100%;
   min-height: 41px;
   padding: 8px 40px 8px 12px;
   outline: none;
-  display: table-cell;
   border-radius: 3px;
   box-sizing: border-box;
   vertical-align: middle;
@@ -454,6 +453,7 @@ textarea#answer_content {
   word-break: break-word;
   overflow-wrap: break-word;
   padding: 8px 12px;
+  width: 366px;
 }
 
 #audioQuestions {
@@ -504,7 +504,7 @@ textarea#answer_content {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 329px;
+  width: 366px;
   height: 42px;
   padding: 10px 12px;
   font-weight: 400;
