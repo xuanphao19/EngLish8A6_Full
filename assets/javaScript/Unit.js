@@ -328,7 +328,7 @@ var followCourses = {
           "What is your mother's name?",
           "Tên mẹ của bạn là gì?",
           "Gợi ý:<br> What is your....",
-          "EmGaiHiep.jpg",
+          "HiepPhan.png",
         ],
         [
           "Vietnamese people are very hospitable",
