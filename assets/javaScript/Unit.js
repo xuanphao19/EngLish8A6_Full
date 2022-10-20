@@ -343,7 +343,7 @@ var followCourses = {
         ],
         [
           "Paddy field",
-          "Listen, rewrite what you hear:",
+          "Listen, rewrite what you hear:❤️",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson1/vocab/audio/1.mp3",
         ],
         [

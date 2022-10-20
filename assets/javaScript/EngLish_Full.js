@@ -22,9 +22,9 @@
     var img = document.getElementById("scream");
     ctx.drawImage(img, -132, -132, 265, 285);
     grad = ctx.createRadialGradient(0, 0, radius * 0.85, 0, 0, radius * 1.18);
-    grad.addColorStop(0, "#eb94dd");
+    grad.addColorStop(0, "#88cd88");
     grad.addColorStop(0.4, "#fff");
-    grad.addColorStop(1, "#88cd88");
+    grad.addColorStop(1, "#eb94dd");
     // grad.addColorStop(0, "#333");
     // grad.addColorStop(0.4, "white");
     // grad.addColorStop(1, "#333");
@@ -488,10 +488,11 @@ handleTest = () => {
   var warningMsg = testValue(answerElement);
   if (warningMsg) {
     errorMessage.innerHTML = warningMsg;
-    errorMessage.style.padding = "10px";
-    suggestionsMsg.style.padding = "10px 10px 0";
-    suggestionsMsg.style.marginTop = "20px";
+    errorMessage.style.padding = "8px";
+    suggestionsMsg.style.padding = "10px 8px 0";
+    suggestionsMsg.style.marginTop = "10px";
     answerElement.style.backgroundColor = " #fad5d58c";
+    answerElement.classList.add("addInvalid");
     testResult = false;
   } else {
     clearErrorMsg();
