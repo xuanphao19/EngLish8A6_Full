@@ -8,7 +8,7 @@ body {
   font-family: Lato, sans-serif;
 }
 .app {
-  min-height: 100vh;
+  min-height: 98vh;
   width: 338px;
   overflow-x: clip;
   margin: 05px auto;
