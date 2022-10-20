@@ -593,7 +593,7 @@ answerElement.addEventListener("focus", function handleClearError(e) {
     suggestions.textContent = "Xem gợi ý";
   }
   audioItem.pause();
-  // e.target.value = "";
+  e.target.value = "";
 });
 
 // Xử lý so sánh (Tham chiếu) input value với chỗi gốc:
