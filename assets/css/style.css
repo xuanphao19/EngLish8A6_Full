@@ -9,7 +9,7 @@ body {
 }
 .app {
   min-height: 100vh;
-  width: 386px;
+  width: 338px;
   overflow-x: clip;
   margin: 05px auto;
 }
@@ -23,7 +23,7 @@ body {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  background-color: #d0d0f0e3;
+  background: rgb(225 238 238);
   transition: background-color 200ms;
   box-shadow: 0 2px 5px 0 rgb(51 62 73 / 10%);
 }
@@ -105,7 +105,7 @@ img.App_avatar:hover {
   align-items: center;
   justify-content: center;
   width: 350px;
-  height: 329px;
+  height: 316px;
 }
 
 .flip-card-inner {
@@ -116,7 +116,7 @@ img.App_avatar:hover {
   border-radius: 5px;
   transition: transform 1.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 0 0 3px rgb(243 227 227 / 50%);
+  box-shadow: 0 0 0 5px #effad5a8;
   z-index: 999;
 }
 
@@ -143,7 +143,7 @@ img.App_avatar:hover {
 .flip-card-back img,
 .flip-card-front img {
   width: 298px;
-  height: 303px;
+  height: 298px;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
 }
@@ -181,14 +181,14 @@ canvas#canvas {
 
 #suggestionsBack {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 9px;
+  left: 9px;
   margin: 0 auto;
   /* padding-top: 138px; */
   padding-right: 12px;
   padding-left: 12px;
-  width: 329px;
-  height: 304px;
+  width: 298px;
+  height: 298px;
   font-size: 1.1rem;
   text-shadow: -0.1px 0px 0 #ffffffad;
   font-weight: 500;
@@ -252,7 +252,7 @@ span.suggestionsBack {
   min-height: 42px;
   border-radius: 4px;
   background-color: #fbfdff6f;
-  box-shadow: 0 2px 4px 4px rgb(100 100 100 / 4%);
+  box-shadow: 0 2px 4px 4px rgb(100 100 100 / 5%);
 }
 
 .Control_time {
@@ -261,6 +261,7 @@ span.suggestionsBack {
   height: 40px;
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: -3px 2px 4px 4px rgb(100 100 100 / 5%);
 }
 .Set_time {
   position: relative;
@@ -292,7 +293,7 @@ span.suggestionsBack {
   justify-content: center;
   padding: 0 15px;
   line-height: 40px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   font-style: italic;
   color: rgb(0, 26, 255);
@@ -373,7 +374,7 @@ span.suggestionsBack {
 }
 
 .Group_control.show-btn {
-  background-color: #d0d0f0;
+  background: rgb(225 238 238);
   border: none;
 }
 
@@ -420,7 +421,7 @@ textarea#answer_content,
   border-radius: 3px;
   box-sizing: border-box;
   vertical-align: middle;
-  background-color: #d6d9ea;
+  background-color: #f6f7f9;
   border: 1px solid rgb(191 251 220);
   text-align: justify;
   overflow: hidden;
@@ -453,7 +454,7 @@ textarea#answer_content {
   word-break: break-word;
   overflow-wrap: break-word;
   padding: 8px 12px;
-  width: 366px;
+  width: 318px;
 }
 
 #audioQuestions {
@@ -463,9 +464,9 @@ textarea#answer_content {
   width: 40px;
   height: 35px;
   border-radius: 999px;
-  background-color: #e5f7c46e;
-  border: 0.5px solid #cacaf4;
-  box-shadow: 0px 0 0 2px #efeff694;
+  background-color: #effad5ba;
+  border: 0.5px solid #effad5;
+  box-shadow: 0px 0 0 2px #e9fabfbf;
   z-index: 9;
   display: none;
 }
@@ -504,7 +505,7 @@ textarea#answer_content {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 366px;
+  width: 318px;
   height: 42px;
   padding: 10px 12px;
   font-weight: 400;
@@ -616,6 +617,11 @@ img.Courses_close,
 img.Courses_menu {
   cursor: pointer;
 }
+
+.Courses_item {
+  padding: 8px 5px;
+}
+
 .btn:hover,
 img.Courses_menu:hover,
 .control_btn:hover {
@@ -645,7 +651,7 @@ img.Courses_close:hover {
 
 .AppModule::after {
   opacity: 0.4;
-  background: #000;
+  background: #000000a3;
 }
 .AppModule {
   z-index: 9999999;
@@ -656,7 +662,7 @@ img.Courses_close:hover {
   left: 0;
   opacity: 1;
   width: 90%;
-  padding: 18px;
+  padding: 15px;
   border-radius: 3px;
   background-color: #d0d0f0cf;
   z-index: 99;
@@ -709,6 +715,8 @@ img.Courses_close:hover {
 
 .courseName {
   color: #415d00e6;
+  text-align: left;
+  margin-left: 8px;
 }
 
 .list_title {
@@ -728,7 +736,7 @@ img#scream {
 
 textarea#answer_content.addInvalid {
   color: #ff0000;
-  border-color: #ff0000;
+  border: 1px solid #ff0000;
   background-color: #fad5d5c2;
 }
 textarea#answer_content.unInvalid {
