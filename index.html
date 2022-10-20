@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./XuanPhao.ico" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>EngLish 8A6 Full</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="app" id="App">
+        <div class="App_container">
+          <div class="App_header">
+            <div class="Courses_header-left">
+              <div class="menuSvg openMenu">
+                <img
+                  class="Courses_menu"
+                  src="./assets/img/menuSvg.svg"
+                  alt="menuSvg"
+                />
+                <span class="App_course-name">EngLish 8A6 Full</span>
+              </div>
+            </div>
+            <div class="Courses_header-right">
+              <div class="Header_avatar">
+                <img
+                  src="./assets/img/Dai_Nhan.png"
+                  class="App_avatar"
+                  alt="Nguyễn Thanh Hòa"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="App_content">
+            <div class="App_flashcard">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="flipCard">
+                    <img
+                      id="scream"
+                      src="./assets/img/Dai_Nhan.png"
+                      alt="The Scream"
+                    />
+                  </div>
+                  <div class="canvasBlock">
+                    <canvas
+                      id="canvas"
+                      width="300"
+                      height="300"
+                      style="border-radius: 50%"
+                    >
+                    </canvas>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <img
+                    src="./assets/img/screenshot_1662025446.png"
+                    alt="Avatar"
+                  />
+                  <div id="suggestionsBack">
+                    <span class="suggestionsBack"> div class="App-group </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="App_practice">
+              <div class="App-group">
+                <div class="Group_control">
+                  <div class="Control_time">
+                    <div class="Set_time">
+                      <div class="side front">
+                        <div class="shows_time"></div>
+                      </div>
+                      <div class="side back">
+                        <div class="shows_times"></div>
+                      </div>
+                      <div class="side top">
+                        <div class="shows_date">thứ mấy</div>
+                      </div>
+                      <div class="side bottom">
+                        <div class="shows_dates">ngày nào</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="App-group">
+                <div class="Control_question">
+                  <div class="Group_title">
+                    <div class="Question_title">Question:</div>
+                    <div class="categories">Yêu cầu đề bài</div>
+                    <div class="productivity">
+                      <span class="progression">01 /</span>
+                      <span class="total">108</span>
+                    </div>
+                  </div>
+                  <div class="Group_control Question_item">
+                    <div class="question_staging">
+                      Lorem ipsum dolor sit amet ipsum
+                    </div>
+                    <div id="audioQuestions">
+                      <audio class="audioItem"></audio>
+                      <img
+                        class="speakerSvg"
+                        src="./assets/img/speakerWave.svg"
+                        alt="speakerWave"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="App-group">
+                <div class="Comtrol_answers">
+                  <div class="Group_title">
+                    <div class="answers_title">Answer plan:</div>
+                    <div class="answer_duration">
+                      <div class="timeSum">
+                        <span class="minutes">00</span> :
+                        <span class="seconds">00</span> :
+                        <span class="milliseconds">00</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="Group_control">
+                    <div class="answer">
+                      <textarea
+                        class=""
+                        id="answer_content"
+                        rows="1"
+                        name="answer"
+                        placeholder="Enter your answer!"
+                      ></textarea>
+                    </div>
+                    <div class="coating">Lorem ipsum dolor sit amet consec</div>
+                  </div>
+                  <span class="suggestions"> </span>
+                  <span class="errorMessage"> </span>
+                </div>
+              </div>
+
+              <div class="App-group">
+                <div class="Group_btn">
+                  <div class="Group_control show-btn">
+                    <div class="show-btn">
+                      <button id="suggestions-btn" class="btn">
+                        Xem gợi ý
+                      </button>
+                      <button id="next" class="btn">Tiếp tục</button>
+                    </div>
+                  </div>
+                  <div id="submitResult" class=""></div>
+                  <div class="Group_control mt20">
+                    <div class="show-btn">
+                      <div id="btnSubmits" class="control_btn">Hướng dẫn</div>
+                      <div id="btnPause" class="control_btn">Pause</div>
+                      <div id="btnStart" class="control_btn">Start</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <audio id="audios" src="./assets/audio/Am_Ohno.mp3"></audio>
+              <audio
+                loop
+                id="backgroundMusic"
+                src="./assets/audio/Uoc_mo_cua_Me.mp3"
+              ></audio>
+            </div>
+          </div>
+          <div class="AppModule">
+            <div class="moduleMenu">
+              <div class="close_header">
+                <div class="menuSvg menuSvgClose">
+                  <img
+                    class="Courses_close"
+                    src="./assets/img/closeSvg.svg"
+                    alt="closeSvg"
+                  />
+                  <span class="App_course-name">EngLish 8A6 Full</span>
+                </div>
+              </div>
+              <h4 class="list_title">Chọn đề mục:</h4>
+              <div class="Courses_list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/javaScript/Unit.js"></script>
+    <script src="./assets/javaScript/EngLish_Full.js"></script>
+    <script>
+      App();
+      var watch = new Stopwatch(timeSum);
+    </script>
+  </body>
+</html>
