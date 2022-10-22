@@ -117,7 +117,7 @@ img.App_avatar:hover {
   transition: transform 1.6s;
   transform-style: preserve-3d;
   box-shadow: 0 0 0 5px #effad5a8;
-  z-index: 999;
+  z-index: 99;
 }
 
 .flip-card-inner.is-flipped {
@@ -420,7 +420,6 @@ textarea#answer_content,
   outline: none;
   border-radius: 3px;
   box-sizing: border-box;
-  vertical-align: middle;
   background-color: #f6f7f9;
   border: 1px solid rgb(191 251 220);
   text-align: justify;
@@ -463,7 +462,7 @@ textarea#answer_content {
   right: 3px;
   width: 40px;
   height: 35px;
-  border-radius: 999px;
+  border-radius: 991px;
   background-color: #effad5ba;
   border: 0.5px solid #effad5;
   box-shadow: 0px 0 0 2px #e9fabfbf;
@@ -549,7 +548,7 @@ textarea#answer_content {
 }
 
 #submitResult.correctResult {
-  text-align: justify;
+  text-align: center;
   font-size: 1rem;
   font-style: italic;
   border-radius: 5px;
@@ -617,17 +616,78 @@ img.Courses_close,
 img.Courses_menu {
   cursor: pointer;
 }
-
-.Courses_item {
-  padding: 8px 5px;
-}
-
 .btn:hover,
 img.Courses_menu:hover,
 .control_btn:hover {
   transform: scale(1.03);
   opacity: 0.8;
 }
+
+.direction {
+  --h: 0px;
+  --dpn: none;
+  position: absolute;
+  top: 63px;
+  left: 23px;
+  width: 256px;
+  padding: 4px 4px 4px 16px;
+  border-radius: 4px;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  font-size: 0.9rem;
+  color: rgb(0 26 255);
+  text-align: justify;
+  background-color: rgb(191 251 220 / 93%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0) 50%
+  );
+  box-shadow: 0 2px 0px 4px rgb(85 94 103 / 10%);
+  z-index: 99999999999;
+  display: none;
+}
+
+span.continue {
+  padding: 8px 16px;
+  border: 1px solid #7b9f8dd9;
+  border-top: transparent;
+  border-radius: 5px;
+  background-color: rgb(183 236 208);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0) 50%
+  );
+  outline: none;
+  cursor: pointer;
+}
+span.continue:hover {
+  opacity: 0.8;
+}
+.direction::before {
+  content: "👆";
+  position: absolute;
+  top: -21px;
+  left: 13px;
+  font-size: 01.3rem;
+}
+.direction::after {
+  display: none;
+}
+.direction::after {
+  content: "👇";
+  position: absolute;
+  font-size: 01.3rem;
+  bottom: -20px;
+  right: 13px;
+  display: var(--dpn);
+  background: rgba(255, 0, 0, 0);
+}
+
 img.Courses_menu:hover {
   background: rgb(67 244 152 / 38%);
   border-radius: 3px;
@@ -636,7 +696,6 @@ img.Courses_close:hover {
   background: rgb(255 41 41 / 67%);
   border-radius: 3px;
 }
-
 .AppModule,
 .AppModule::after {
   content: "";
@@ -648,13 +707,12 @@ img.Courses_close:hover {
   border-radius: 8px;
   z-index: 90;
 }
-
 .AppModule::after {
   opacity: 0.4;
-  background: #000000a3;
+  background: #00000082;
 }
 .AppModule {
-  z-index: 9999999;
+  z-index: 999;
 }
 .moduleMenu {
   position: absolute;
@@ -662,9 +720,8 @@ img.Courses_close:hover {
   left: 0;
   opacity: 1;
   width: 90%;
-  padding: 15px;
   border-radius: 3px;
-  background-color: #d0d0f0cf;
+  background-color: #d5d5e996;
   z-index: 99;
 }
 
@@ -672,6 +729,21 @@ img.Courses_close:hover {
   display: none;
   animation: fadeIn linear 0.3s;
   transition: all linear 0.4s;
+}
+.Courses_item {
+  margin-bottom: -8px;
+  padding: 10px;
+  border-radius: 5px;
+  user-select: none;
+  background-color: #fbfdff87;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+  z-index: 9999;
+  opacity: 1;
+}
+
+h4.list_title {
+  margin-top: 2px;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
 }
 
 @keyframes fadeIn {
@@ -745,6 +817,20 @@ textarea#answer_content.unInvalid {
 #sum10 {
   display: block;
   padding: 10px 10px 10px 15px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Open Sans", sans-serif;
 }
+/*
+div:first-child {
+  display: inline-block;
+  margin-left: 20px;
+  border: 10px solid;
+  border-color: transparent transparent #ffffff;
+}
+
+div:last-child {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #ffffff;
+} */
