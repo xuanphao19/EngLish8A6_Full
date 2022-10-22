@@ -90,12 +90,30 @@
   }
 }
 
-// ******************************************** Create App ************************************************
+// ***************************************** Create App *********************************************
 var AppElement = document.querySelector("#App");
 var $ = AppElement.querySelector(".App_content");
 var CoursesMenu = AppElement.querySelector(".openMenu");
 var moduleElement = AppElement.querySelector(".AppModule");
 var answerElement = $.querySelector("#answer_content");
+
+// ******* on page load *********
+function App() {
+  followCourses.Start();
+  showAppModule();
+  coursesItem();
+  getRandomQuesId();
+  handleUI();
+}
+
+function handleUI() {
+  handleUI_Start();
+  getRandomQuestion();
+  questPictures();
+  speakerWaves();
+  showSuggestions();
+  console.log(`Gợi ý dành cho bạn: `, correctAnswer);
+}
 
 var showAppModule = function () {
   CoursesMenu.addEventListener("click", () => {
@@ -122,15 +140,11 @@ function closeModule(_e) {
 var randomNumbers = [];
 var n = 0;
 var j = 0;
-var minRequirements = 20;
+var minRequirements = followCourses.unitCourses[0].minReq;
 var i = 0;
 
 function randomNumber(max) {
   j++;
-  if (j === max) {
-    j = 0;
-    randomNumbers = [];
-  }
   n = Math.floor(Math.random() * max);
   var check = randomNumbers.includes(n);
   if (!check) {
@@ -144,6 +158,9 @@ function randomNumber(max) {
       }
     }
   }
+  if (randomNumbers.length === max) {
+    randomNumbers = [];
+  }
 }
 
 // Lấy ID khi click Hạng mục khóa học:
@@ -151,6 +168,7 @@ var unitList = moduleElement.querySelector(".Courses_list");
 var unitElement = unitList.querySelectorAll(".Courses_item");
 function coursesItem() {
   unitList.addEventListener("click", function (e) {
+    i = 0;
     j = 0;
     randomNumbers = [];
     const tgt = e.target;
@@ -167,7 +185,7 @@ function coursesItem() {
 // var Units;
 var Units;
 var lengths;
-var questionId = "Unit1";
+var questionId = followCourses.unitCourses[0].id;
 function getRandomQuesId(questionId) {
   followCourses.unitCoursesArr(questionId);
   if (Units) {
@@ -175,28 +193,11 @@ function getRandomQuesId(questionId) {
     lengths = Units.length;
   } else {
     lengths = 0;
-    questionId = "Unit1";
+    questionId = followCourses.unitCourses[0].id;
     Units = followCourses.unitCourses[0].info;
     lengths = Units.length;
+    minRequirements = followCourses.unitCourses[0].minReq;
   }
-}
-
-// ******* on page load *********
-function App() {
-  followCourses.Start();
-  showAppModule();
-  coursesItem();
-  getRandomQuesId();
-  handleUI();
-}
-
-function handleUI() {
-  handleUI_Start();
-  getRandomQuestion();
-  questPictures();
-  speakerWaves();
-  showSuggestions();
-  console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
 
 var categoriesEle = $.querySelector(".categories");
@@ -204,10 +205,10 @@ progression = $.querySelector(".progression");
 total = $.querySelector(".total");
 function handleUI_Start() {
   categoriesEle.innerHTML = `Luyện tập ${questionId}`;
-  if (j < 10) {
-    progression.innerHTML = `0${i}  / `;
+  if (i < 10) {
+    progression.innerHTML = `0${i} / `;
   } else {
-    progression.innerHTML = `${i}  / `;
+    progression.innerHTML = `${i} / `;
   }
   total.innerHTML = `<pre> ${lengths}</pre>`;
 }
@@ -342,67 +343,69 @@ $.querySelector(".shows_times").innerHTML = day_name;
 
 // Handle countTime:
 var timeSum = AppElement.querySelector(".timeSum");
-function Stopwatch(elem) {
-  var time = 0;
-  var offset;
-  var interval;
-  function update() {
-    if (this.isOn) {
-      time += delta();
+class Stopwatch {
+  constructor(elem) {
+    var time = 0;
+    var offset;
+    var interval;
+    function update() {
+      if (this.isOn) {
+        time += delta();
+      }
+      elem.textContent = timeFormatter(time);
     }
-    elem.textContent = timeFormatter(time);
-  }
-  function delta() {
-    var now = Date.now();
-    var timePassed = now - offset;
-    offset = now;
-    return timePassed;
-  }
-  function timeFormatter(time) {
-    time = new Date(time);
-    var minutes = time.getMinutes().toString();
-    var seconds = time.getSeconds().toString();
-    var milliseconds = time.getMilliseconds().toString();
-    var millisecond = Math.floor(milliseconds / 10);
-    if (minutes.length < 2) {
-      minutes = "0" + minutes;
+    function delta() {
+      var now = Date.now();
+      var timePassed = now - offset;
+      offset = now;
+      return timePassed;
     }
-    if (seconds.length < 2) {
-      seconds = "0" + seconds;
+    function timeFormatter(time) {
+      time = new Date(time);
+      var minutes = time.getMinutes().toString();
+      var seconds = time.getSeconds().toString();
+      var milliseconds = time.getMilliseconds().toString();
+      var millisecond = Math.floor(milliseconds / 10);
+      if (minutes.length < 2) {
+        minutes = "0" + minutes;
+      }
+      if (seconds.length < 2) {
+        seconds = "0" + seconds;
+      }
+      if (millisecond < 10) {
+        millisecond = `0${millisecond}`;
+      }
+      if (seconds == 10) {
+        btnSubmits.textContent = "Stop";
+      }
+      var result = `${minutes}: ${seconds}: ${millisecond}`;
+      return result;
     }
-    if (millisecond < 10) {
-      millisecond = `0${millisecond}`;
-    }
-    if (seconds == 10) {
-      btnSubmits.textContent = "Stop";
-    }
-    var result = `${minutes}: ${seconds}: ${millisecond}`;
-    return result;
-  }
 
-  this.start = function () {
-    interval = setInterval(update.bind(this), 1);
-    offset = Date.now();
-    this.isOn = true;
-    this.isOnStartAudio = true;
-  };
+    this.start = function () {
+      interval = setInterval(update.bind(this), 1);
+      offset = Date.now();
+      this.isOn = true;
+      this.isOnStartAudio = true;
+    };
 
-  this.stop = function () {
-    clearInterval(interval);
-    interval = null;
-    this.isOn = false;
-    this.isOnStartAudio = true;
-  };
+    this.stop = function () {
+      clearInterval(interval);
+      interval = null;
+      this.isOn = false;
+      this.isOnStartAudio = true;
+    };
 
-  this.reset = function () {
-    time = 0;
-    interval = null;
+    this.reset = function () {
+      time = 0;
+      interval = null;
+      this.isOn = false;
+      this.isOnStartAudio = false;
+      update();
+    };
     this.isOn = false;
     this.isOnStartAudio = false;
-    update();
-  };
-  this.isOn = false;
-  this.isOnStartAudio = false;
+  }
 }
 
 function start() {
@@ -513,9 +516,10 @@ clearErrorMsg = () => {
 //Handle Click Next btn:
 var cardNext = $.querySelector("#next");
 var congratulationMusic = audioLists[9];
+var medals = "";
 cardNext.addEventListener("click", () => {
   i = i;
-  console.log(`1111111111111111111111111111`, i, `i + 1 =`, i + 1, questionId);
+  console.log(`111111111111111`, i, `i + 1 =`, i + 1, questionId);
   var audioErrorList = audioLists[0];
   var audioYeahList = audioLists[2];
   answerValue = answerElement.value;
@@ -565,6 +569,9 @@ cardNext.addEventListener("click", () => {
     handleTest();
     if (testResult === true) {
       answerElement.focus();
+      medals += "⭐";
+      submitResult.classList.add("correctResult");
+      submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
       if (btnSubmits.textContent === "Nộp bài!" && i + 1 === minRequirements) {
         submitResult.innerHTML = `Chúc mừng bạn!<br> Bạn đã vượt qua thử thách. <br> Bạn vẫn có thể tiếp tục luyện tập <br> Nếu bạn muốn nâng cao Trình độ!`;
         backgroundMusic.pause();
@@ -577,10 +584,15 @@ cardNext.addEventListener("click", () => {
       handleUI();
       answerElement.value = "";
     } else {
+      medals = medals.slice(1);
+      submitResult.classList.add("correctResult");
+      submitResult.innerHTML = `<div id='sum10'>Chúc mừng bạn Quay vào Ô: Trừ 1 ⭐ </div>`;
+      answerElement.placeholder = "💥💥💥💥💥💥💥💥💥💥💥💥💥";
       audioPlay(audioErrorList);
-      createRandomSong();
+      createRandomSong(songs);
     }
   }
+  console.log(medals);
 });
 
 // Xóa massage lỗi và input value khi focus input:
@@ -593,6 +605,7 @@ answerElement.addEventListener("focus", function handleClearError(e) {
     suggestions.textContent = "Xem gợi ý";
   }
   audioItem.pause();
+  answerElement.placeholder = "Enter your answer! 🌻 🌻 🌻";
   e.target.value = "";
 });
 
@@ -669,7 +682,7 @@ var submitResult = $.querySelector("#submitResult");
 btnSubmits.addEventListener("click", function () {
   if (btnSubmits.textContent === "Hướng dẫn") {
     submitResult.classList.add("correctResult");
-    submitResult.innerHTML = `<div id='sum10' class="canTrai">Bạn bấm Start để bắt đâu trả lời câu hỏi<br> Nhập xong đáp án bấm tiếp tục để đi tiếp <br>Không nghĩ được đáp án bấm "Xem gợi ý" để nhận trợ giúp (Chỉ những câu khó) <br> Khi click Start sẽ bắt đầu tính thời gian<br>Cảm ơn bạn đã ủng hộ chúng tôi! <br> Vui lòng không tự động sao chép, chia sẻ dưới mọi hình thức.</div>`;
+    submitResult.innerHTML = `<div id='sum10'>Bạn bấm Start để bắt đâu trả lời câu hỏi<br> Nhập xong đáp án bấm tiếp tục để đi tiếp <br>Không nghĩ được đáp án bấm "Xem gợi ý" để nhận trợ giúp (Chỉ những câu khó) <br> Khi click Start sẽ bắt đầu tính thời gian<br>Cảm ơn bạn đã ủng hộ chúng tôi! <br> Vui lòng không tự động sao chép, chia sẻ dưới mọi hình thức.🥇🥇🥇</div>`;
     return;
   }
 
@@ -728,33 +741,46 @@ answerElement.addEventListener("keydown", function (event) {
   }
 });
 
-function createRandomSong() {
-  var randomNumbers = [];
-  var n = 0;
-  var j = 0;
-  function randomNumber(max) {
-    j++;
-    if (j === max) {
-      j = 0;
-      randomNumbers = [];
-    }
-    n = Math.floor(Math.random() * max);
-    var check = randomNumbers.includes(n);
-    if (!check) {
-      randomNumbers.push(n);
-    } else {
-      while (check) {
-        n = Math.floor(Math.random() * max);
-        check = randomNumbers.includes(n);
-        if (!check) {
-          randomNumbers.push(n);
-        }
+var randomSong = [];
+function createRandomSong(songs) {
+  var songLength = songs.length;
+  var m = Math.floor(Math.random() * songLength);
+  var check = randomSong.includes(m);
+  if (!check) {
+    randomSong.push(m);
+  } else {
+    while (check) {
+      m = Math.floor(Math.random() * songLength);
+      check = randomSong.includes(m);
+      if (!check) {
+        randomSong.push(m);
       }
     }
   }
-  var songLength = songs.length;
-  randomNumber(songLength);
-  let newRandomSong;
-  newRandomSong = songs[n];
-  suggestionsMsg.textContent = `${newRandomSong}`;
+  if (randomSong.length === songLength) {
+    randomSong = [];
+  }
+  suggestionsMsg.textContent = `${songs[m]}`;
 }
+
+// Đặt lại giá trị cho thuộc tính CSS của phần tử giả thông qua biến CSS:
+var direction = AppElement.querySelector(".direction");
+function setDisplay() {
+  direction.style.setProperty("--dpn", "block");
+}
+function removeDisplay() {
+  direction.style.setProperty("--dpn", "none");
+}
+setDisplay();
+
+// Ví dụ:
+// Xử lý giá trị CSS của Element và Element::after, Element::before
+/* var direction = document.querySelector(".direction");
+var getHeight = direction.clientHeight;
+console.log(`1111111111`, `1 =`, direction, `5 =`, getHeight);
+var colorss = window.getComputedStyle(direction, ".direction");
+var color = window.getComputedStyle(direction, ":after");
+var colors = color.getPropertyValue("bottom");
+console.log(`222222222`, `2 =`, color);
+console.log(`333333333`, `3 =`, colors);
+console.log(`444444444`, `4 =`, colorss); */

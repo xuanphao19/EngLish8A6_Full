@@ -5,6 +5,7 @@ var followCourses = {
       id: "Unit1",
       className: "Courses_item",
       image: "./assets/img/MisaCute.png",
+      minReq: 10,
       info: [
         [
           "Let's hang out this weekend!",
@@ -465,6 +466,7 @@ var followCourses = {
       id: "Unit2",
       className: "Courses_item",
       image: "./assets/img/Hatrang.png",
+      minReq: 10,
       info: [
         [
           "Virtual",
@@ -1062,6 +1064,7 @@ var followCourses = {
       id: "Unit3",
       className: "Courses_item",
       image: "./assets/img/Screenshot_20210503-120123_Gallery.jpg",
+      minReq: 10,
       info: [
         // Từ vựng căn bản:
         [
@@ -2192,6 +2195,7 @@ var followCourses = {
       id: "Giữa_kỳI",
       className: "Courses_item",
       image: "./assets/img/HiepPhan.png",
+      minReq: 3,
       info: [
         [
           "The president ap proved the program to protect ze bras.",
@@ -2217,12 +2221,12 @@ var followCourses = {
   renderUnit: function () {
     const htmls = this.unitCourses.map((unitItem) => {
       return `
-      <div id="${unitItem.id}" class="${unitItem.className}">
-      <div class="list_avatar">
-      <img src="${unitItem.image}" alt="${unitItem.id}" class="App_avatar" />
-      </div>
-      <span class="courseName">EngLish 8A6 ${unitItem.id}</span>
-      </div>;
+        <div id="${unitItem.id}" class="${unitItem.className}">
+          <div class="list_avatar">
+            <img src="${unitItem.image}" alt="${unitItem.id}" class="App_avatar" />
+          </div>
+          <span class="courseName">EngLish 8A6 ${unitItem.id}</span>
+        </div>;
       `;
     });
     unitList.innerHTML = htmls.join("");
@@ -2232,9 +2236,12 @@ var followCourses = {
   },
 
   unitCoursesArr: function (questionId) {
+    minRequirements = 0;
     this.unitCourses.map((unitCourse) => {
       if (questionId === unitCourse.id) {
         Units = unitCourse.info;
+        minRequirements = unitCourse.minReq;
+        questionId === unitCourse.id;
       }
     });
     return Units;
