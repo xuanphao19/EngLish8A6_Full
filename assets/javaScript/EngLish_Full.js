@@ -615,15 +615,15 @@ answerElement.oninput = function () {
   clearErrorMsg();
   autoGrow();
   // Xử lý báo lỗi khi nhập trường đầu vào bị sai:
-  let resultValue = correctAnswer;
-  let result = resultValue.includes(answerValue);
-  if (result) {
-    answerElement.classList.remove("addInvalid");
-    answerElement.classList.add("unInvalid");
-  } else {
-    answerElement.classList.remove("unInvalid");
-    answerElement.classList.add("addInvalid");
-  }
+  // let resultValue = correctAnswer;
+  // let result = resultValue.includes(answerValue);
+  // if (result) {
+  //   answerElement.classList.remove("addInvalid");
+  //   answerElement.classList.add("unInvalid");
+  // } else {
+  //   answerElement.classList.remove("unInvalid");
+  //   answerElement.classList.add("addInvalid");
+  // }
 };
 
 // Mở rộng hộp nhập dữ liệu đầu vào answer:
