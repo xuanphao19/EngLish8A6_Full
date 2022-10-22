@@ -13,6 +13,9 @@
     <div id="root">
       <div class="app" id="App">
         <div class="App_container">
+          <span class="direction">
+            Nhấn mở Menu <span class="continue">Đi tiếp</span>
+          </span>
           <div class="App_header">
             <div class="Courses_header-left">
               <div class="menuSvg openMenu">
@@ -93,7 +96,7 @@
               <div class="App-group">
                 <div class="Control_question">
                   <div class="Group_title">
-                    <div class="Question_title">Question:</div>
+                    <div class="Question_title">Question:❓</div>
                     <div class="categories">Yêu cầu đề bài</div>
                     <div class="productivity">
                       <span class="progression">01 /</span>
@@ -119,7 +122,7 @@
               <div class="App-group">
                 <div class="Comtrol_answers">
                   <div class="Group_title">
-                    <div class="answers_title">Answer plan:</div>
+                    <div class="answers_title">Answer plan: ⏏</div>
                     <div class="answer_duration">
                       <div class="timeSum">
                         <span class="minutes">00</span> :
@@ -135,11 +138,11 @@
                         id="answer_content"
                         rows="1"
                         name="answer"
-                        placeholder="Enter your answer!"
+                        placeholder="Enter your answer! 🤞"
                         class=""
                       ></textarea>
                     </div>
-                    <div class="coating">Lorem ipsum dolor sit amet consec</div>
+                    <div class="coating"></div>
                   </div>
                   <span class="suggestions"> </span>
                   <span class="errorMessage"> </span>
@@ -151,17 +154,17 @@
                   <div class="Group_control show-btn">
                     <div class="show-btn">
                       <button id="suggestions-btn" class="btn">
-                        Xem gợi ý
+                        Xem gợi ý ✨
                       </button>
-                      <button id="next" class="btn">Tiếp tục</button>
+                      <button id="next" class="btn">Tiếp tục ⏩</button>
                     </div>
                   </div>
                   <div id="submitResult" class=""></div>
                   <div class="Group_control mt10">
                     <div class="show-btn">
                       <div id="btnSubmits" class="control_btn">Hướng dẫn</div>
-                      <div id="btnPause" class="control_btn">Pause</div>
-                      <div id="btnStart" class="control_btn">Start</div>
+                      <div id="btnPause" class="control_btn">Pause ⏸</div>
+                      <div id="btnStart" class="control_btn">Start ▶</div>
                     </div>
                   </div>
                 </div>
@@ -188,7 +191,7 @@
                   <span class="App_course-name">EngLish 8A6 Full</span>
                 </div>
               </div>
-              <h4 class="list_title">Chọn đề mục:</h4>
+              <h4 class="list_title">Chọn đề mục: 👌</h4>
               <div class="Courses_list"></div>
             </div>
           </div>
@@ -200,6 +203,8 @@
     <script src="./assets/javaScript/EngLish_Full.js"></script>
     <script>
       App();
+      // serTop();
+
       var watch = new Stopwatch(timeSum);
     </script>
   </body>
