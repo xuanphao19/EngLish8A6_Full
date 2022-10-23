@@ -432,8 +432,11 @@ textarea#answer_content,
 .question_staging {
   font-size: 1rem;
   line-height: 1.4;
-  color: #415d00db;
+  color: #415d00;
   font-family: 'Open Sans', sans-serif;
+}
+::placeholder {
+  color: #415d0077;
 }
 
 textarea#answer_content:focus {
@@ -637,7 +640,7 @@ img.Courses_menu:hover,
   box-shadow: 0px 0px 0px 2px rgb(225 238 238 / 31%);
 }
 .moduleDirection_content {
-  top: 95px;
+  top: 90px;
   width: 288px;
   padding: 10px 16px;
   border-radius: 0;
@@ -672,7 +675,7 @@ img.Courses_menu:hover,
 }
 .direction_close,
 .direction_continue {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   border-radius: 3px;
   box-shadow: 0px 0px 0px 2px rgb(225 238 238 / 31%);
   cursor: pointer;
@@ -834,7 +837,6 @@ textarea#answer_content.unInvalid {
   word-break: break-word;
   overflow-wrap: break-word;
   border-radius: 99999999999px;
-  /* background-color: #6aff002d; */
   animation: loading04 0.3s infinite linear;
   z-index: 99999999;
 }
