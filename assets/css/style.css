@@ -251,7 +251,7 @@ span.suggestionsBack {
   margin-top: 6px;
   min-height: 42px;
   border-radius: 4px;
-  background-color: #fbfdff6f;
+  /* background-color: #fbfdff6f; */
   box-shadow: 0 2px 4px 4px rgb(100 100 100 / 5%);
 }
 
@@ -420,8 +420,8 @@ textarea#answer_content,
   outline: none;
   border-radius: 3px;
   box-sizing: border-box;
-  background-color: #f6f7f9;
-  border: 1px solid rgb(191 251 220);
+  background-color: #fcfff4;
+  border: 1px solid rgb(174 252 212 / 93%);
   text-align: justify;
   overflow: hidden;
 }
@@ -623,50 +623,57 @@ img.Courses_menu:hover,
   opacity: 0.8;
 }
 
+.moduleDirection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 5px;
+  background-color: rgb(51 62 73 / 10%);
+  transition: all linear 0.4s;
+  z-index: 99999999999;
+}
 .direction {
-  --h: 0px;
-  --dpn: none;
+  display: flex;
+  align-items: center;
+}
+.direction,
+.moduleDirection_content {
+  --BeforeDpl: block;
+  --AfterDpl: none;
   position: absolute;
   top: 63px;
   left: 23px;
-  width: 256px;
-  padding: 4px 4px 4px 16px;
+  width: 268px;
+  padding: 2px 4px 2px 16px;
   border-radius: 4px;
   box-sizing: content-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   user-select: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: rgb(0 26 255);
   text-align: justify;
   background-color: rgb(191 251 220 / 93%);
+  box-shadow: 0px 0px 0px 2px rgb(225 238 238 / 31%);
+}
+.moduleDirection_content {
+  top: 95px;
+  width: 288px;
+  padding: 10px 16px;
+  border-radius: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
   background-image: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.5),
     rgba(255, 255, 255, 0) 50%
   );
-  box-shadow: 0 2px 0px 4px rgb(85 94 103 / 10%);
-  z-index: 99999999999;
-  display: none;
 }
-
-span.continue {
-  padding: 8px 16px;
-  border: 1px solid #7b9f8dd9;
-  border-top: transparent;
-  border-radius: 5px;
-  background-color: rgb(183 236 208);
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(255, 255, 255, 0) 50%
-  );
-  outline: none;
-  cursor: pointer;
-}
-span.continue:hover {
-  opacity: 0.8;
+.moduleDirection_content p + p {
+  padding-top: 5px;
 }
 .direction::before {
   content: "👆";
@@ -674,9 +681,7 @@ span.continue:hover {
   top: -21px;
   left: 13px;
   font-size: 01.3rem;
-}
-.direction::after {
-  display: none;
+  display: var(--BeforeDpl);
 }
 .direction::after {
   content: "👇";
@@ -684,8 +689,25 @@ span.continue:hover {
   font-size: 01.3rem;
   bottom: -20px;
   right: 13px;
-  display: var(--dpn);
+  display: var(--AfterDpl);
   background: rgba(255, 0, 0, 0);
+}
+.direction_content {
+  flex-grow: 1;
+}
+.direction_close,
+.direction_continue {
+  margin-bottom: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 2px rgb(225 238 238 / 31%);
+  cursor: pointer;
+}
+.direction_close {
+  margin-left: 10px;
+}
+.direction_close:hover,
+span.direction_continue:hover {
+  opacity: 0.8;
 }
 
 img.Courses_menu:hover {
@@ -820,17 +842,3 @@ textarea#answer_content.unInvalid {
   margin-top: 10px;
   font-family: "Open Sans", sans-serif;
 }
-/*
-div:first-child {
-  display: inline-block;
-  margin-left: 20px;
-  border: 10px solid;
-  border-color: transparent transparent #ffffff;
-}
-
-div:last-child {
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  background-color: #ffffff;
-} */
