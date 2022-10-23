@@ -843,7 +843,6 @@ textarea#answer_content.unInvalid {
 
 .stars {
   display: inline-block;
-  min-width: 5px;
   max-width: 326px;
   min-height: 15px;
 }
