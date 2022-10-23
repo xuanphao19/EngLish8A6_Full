@@ -856,7 +856,7 @@ textarea#answer_content.unInvalid {
   word-break: break-word;
   overflow-wrap: break-word;
   border-radius: 99999999999px;
-  background-color: #6aff002d;
+/*   background-color: #6aff002d; */
   animation: loading04 0.3s infinite linear;
   z-index: 99999999;
 }
