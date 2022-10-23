@@ -470,7 +470,7 @@ function testValue(answerElement) {
     if (correctAnswer !== answerValue) {
       suggestionsMsg.textContent = "";
       if (!answerValue) {
-        return (warningMsgs = `"Nhân bất học bất tri lý. <br> Ngọc bất trác, bất thành khí!" <br>*  *  *<br> "Không có Tri thức<br> là TỰ làm nhục CHÍNH MÌNH!" `);
+        return (warningMsgs = `Mỗi ⭐ bằng 1k NÈ. <br> Đang chờ bạn CHINH PHỤC hem!<br>*  *  *<br> "Không có Tri thức<br> là TỰ làm nhục CHÍNH MÌNH!" `);
       } else if (!regex.test(answerValue)) {
         return `Không sử dụng khoảng trắng <br> để bắt đầu hoặc kết thúc`;
       } else if (!/[A-Z]/.test(answerValue)) {
