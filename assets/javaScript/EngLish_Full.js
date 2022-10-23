@@ -1,9 +1,9 @@
 // ***************************************** Create App *********************************************
-var AppElement = document.querySelector('#App');
-var $ = AppElement.querySelector('.App_content');
-var CoursesMenu = AppElement.querySelector('.openMenu');
-var moduleElement = AppElement.querySelector('.AppModule');
-var answerElement = $.querySelector('#answer_content');
+var AppElement = document.querySelector("#App");
+var $ = AppElement.querySelector(".App_content");
+var CoursesMenu = AppElement.querySelector(".openMenu");
+var moduleElement = AppElement.querySelector(".AppModule");
+var answerElement = $.querySelector("#answer_content");
 function App() {
   followCourses.Start();
   showAppModule();
@@ -20,24 +20,24 @@ function handleUI() {
   console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
 var showAppModule = function () {
-  CoursesMenu.addEventListener('click', () => {
-    moduleElement.removeEventListener('animationend', listenerClose);
+  CoursesMenu.addEventListener("click", () => {
+    moduleElement.removeEventListener("animationend", listenerClose);
     if (moduleElement) {
-      moduleElement.style.display = 'block';
+      moduleElement.style.display = "block";
     }
   });
 };
 function listenerClose() {
-  moduleElement.style.animation = '';
-  moduleElement.style.display = 'none';
+  moduleElement.style.animation = "";
+  moduleElement.style.display = "none";
 }
-var CoursesClose = moduleElement.querySelector('.Courses_close');
-CoursesClose.addEventListener('click', (e) => {
+var CoursesClose = moduleElement.querySelector(".Courses_close");
+CoursesClose.addEventListener("click", (e) => {
   closeModule(e);
 });
 function closeModule(_e) {
-  moduleElement.style.animation = 'fadeOut 0.5s';
-  moduleElement.addEventListener('animationend', listenerClose);
+  moduleElement.style.animation = "fadeOut 0.5s";
+  moduleElement.addEventListener("animationend", listenerClose);
 }
 
 var randomNumbers = [];
@@ -64,16 +64,16 @@ function randomNumber(max) {
     randomNumbers = [];
   }
 }
-var unitList = moduleElement.querySelector('.Courses_list');
-var unitElement = unitList.querySelectorAll('.Courses_item');
+var unitList = moduleElement.querySelector(".Courses_list");
+var unitElement = unitList.querySelectorAll(".Courses_item");
 function coursesItem() {
-  unitList.addEventListener('click', function (e) {
+  unitList.addEventListener("click", function (e) {
     i = 0;
     j = 0;
     randomNumbers = [];
     const tgt = e.target;
-    if (tgt.closest('.Courses_item')) {
-      questionId = tgt.closest('.Courses_item').id;
+    if (tgt.closest(".Courses_item")) {
+      questionId = tgt.closest(".Courses_item").id;
     }
     closeModule();
     clearErrorMsg();
@@ -97,9 +97,9 @@ function getRandomQuesId(questionId) {
     minRequirements = followCourses.unitCourses[0].minReq;
   }
 }
-var categoriesEle = $.querySelector('.categories');
-progression = $.querySelector('.progression');
-total = $.querySelector('.total');
+var categoriesEle = $.querySelector(".categories");
+progression = $.querySelector(".progression");
+total = $.querySelector(".total");
 function handleUI_Start() {
   categoriesEle.innerHTML = `Luyện tập ${questionId}`;
   if (i < 10) {
@@ -109,9 +109,9 @@ function handleUI_Start() {
   }
   total.innerHTML = `<pre> ${lengths}</pre>`;
 }
-var questionStaging = $.querySelector('.question_staging');
+var questionStaging = $.querySelector(".question_staging");
 var randomQuestion;
-var correctAnswer = '';
+var correctAnswer = "";
 function getRandomQuestion() {
   lengths = Units.length;
   randomNumber(lengths);
@@ -120,58 +120,63 @@ function getRandomQuestion() {
   correctAnswer = randomQuestion[0];
 }
 
-var scream = AppElement.querySelector('#scream');
+var scream = AppElement.querySelector("#scream");
+var images = "./assets/img/HiepPhan.png";
 function questPictures() {
   for (var items of randomQuestion) {
     var itemImg;
-    if (items.includes('png') || items.includes('jpg')) {
+    if (items.includes("png") || items.includes("jpg")) {
       itemImg = items;
       scream.src = `./assets/img/${itemImg}`;
+    } else {
+      scream.src = `${images}`;
     }
   }
 }
 
 var audioLists = [
-  /* 0 */ 'Am_Ohno',
-  /* 1 */ 'Uoc_mo_cua_Me',
-  /* 2 */ 'yeah',
-  /* 3 */ 'Tambiet',
-  /* 4 */ 'Nhac_nen_hay',
-  /* 5 */ 'Tieng_bom',
-  /* 6 */ 'Tiengkimgiaydonghokeu',
-  /* 7 */ 'Xin_chao',
-  /* 8 */ 'WelcomeToWonderland',
-  /* 9 */ 'Tieng_voTay0133',
+  /* 0 */ "Am_Ohno",
+  /* 1 */ "Uoc_mo_cua_Me",
+  /* 2 */ "yeah",
+  /* 3 */ "Tambiet",
+  /* 4 */ "Nhac_nen_hay",
+  /* 5 */ "Tieng_bom",
+  /* 6 */ "Tiengkimgiaydonghokeu",
+  /* 7 */ "Xin_chao",
+  /* 8 */ "WelcomeToWonderland",
+  /* 9 */ "Tieng_voTay0133",
 ];
-var audioQuestions = AppElement.querySelector('#audioQuestions');
-var audioItem = AppElement.querySelector('.audioItem');
+var audioQuestions = AppElement.querySelector("#audioQuestions");
+var audioItem = AppElement.querySelector(".audioItem");
 function speakerWaves() {
   for (var items of randomQuestion) {
     var itemMp3;
-    if (items.includes('audio') || items.includes('mp3') || items.includes('sound')) {
+    if (items.includes("audio") || items.includes("mp3") || items.includes("sound")) {
       itemMp3 = items;
-      audioQuestions.style.display = 'block';
+      questionStaging.style.paddingRight = "40px";
+      audioQuestions.style.display = "block";
       audioItem.src = `${itemMp3}`;
     }
     if (itemMp3 === undefined) {
-      audioQuestions.style.display = 'none';
+      questionStaging.style.paddingRight = "12px";
+      audioQuestions.style.display = "none";
       var noAudioItem = audioLists[6];
       itemMp3 = `./assets/audio/${noAudioItem}.mp3`;
       audioItem.src = `${itemMp3}`;
     }
   }
 }
-audioQuestions.addEventListener('click', () => {
-  audioItem.style.transform = 'scale(0.3)';
+audioQuestions.addEventListener("click", () => {
+  audioItem.style.transform = "scale(0.3)";
   audioItem.play();
   if (isPlayIng) {
     pauseBackgroundMusic();
   }
 });
-var suggestionsElement = $.querySelector('.suggestionsBack');
+var suggestionsElement = $.querySelector(".suggestionsBack");
 function showSuggestions() {
   for (var items of randomQuestion) {
-    var itemSuggestions = items.endsWith('Gợi ý:', 6);
+    var itemSuggestions = items.endsWith("Gợi ý:", 6);
     var suggestionsValue;
     if (itemSuggestions) {
       suggestionsValue = items;
@@ -191,36 +196,36 @@ if (date < 10) {
 } else {
   current_date = `Ngày: ${dates.getDate()} Tháng: ${dates.getMonth() + 1} Năm: ${dates.getFullYear()}`;
 }
-$.querySelector('.shows_date').innerHTML = current_date;
-$.querySelector('.shows_dates').innerHTML = current_date;
+$.querySelector(".shows_date").innerHTML = current_date;
+$.querySelector(".shows_dates").innerHTML = current_date;
 var current_day = dates.getDay();
-var day_name = '';
+var day_name = "";
 switch (current_day) {
   case 0:
-    day_name = 'Chủ nhật';
+    day_name = "Chủ nhật";
     break;
   case 1:
-    day_name = 'Thứ hai';
+    day_name = "Thứ hai";
     break;
   case 2:
-    day_name = 'Thứ ba';
+    day_name = "Thứ ba";
     break;
   case 3:
-    day_name = 'Thứ tư';
+    day_name = "Thứ tư";
     break;
   case 4:
-    day_name = 'Thứ năm';
+    day_name = "Thứ năm";
     break;
   case 5:
-    day_name = 'Thứ sau';
+    day_name = "Thứ sau";
     break;
   case 6:
-    day_name = 'Thứ bảy';
+    day_name = "Thứ bảy";
 }
-$.querySelector('.shows_time').innerHTML = day_name;
-$.querySelector('.shows_times').innerHTML = day_name;
+$.querySelector(".shows_time").innerHTML = day_name;
+$.querySelector(".shows_times").innerHTML = day_name;
 
-var timeSum = AppElement.querySelector('.timeSum');
+var timeSum = AppElement.querySelector(".timeSum");
 class Stopwatch {
   constructor(elem) {
     var time = 0;
@@ -245,16 +250,16 @@ class Stopwatch {
       var milliseconds = time.getMilliseconds().toString();
       var millisecond = Math.floor(milliseconds / 10);
       if (minutes.length < 2) {
-        minutes = '0' + minutes;
+        minutes = "0" + minutes;
       }
       if (seconds.length < 2) {
-        seconds = '0' + seconds;
+        seconds = "0" + seconds;
       }
       if (millisecond < 10) {
         millisecond = `0${millisecond}`;
       }
       if (seconds == 10) {
-        btnSubmits.textContent = 'Stop';
+        btnSubmits.textContent = "Stop";
       }
       var result = `${minutes}: ${seconds}: ${millisecond}`;
       return result;
@@ -286,20 +291,20 @@ function start() {
   watch.start();
 }
 function stop() {
-  btnStart.textContent = 'Start';
+  btnStart.textContent = "Start";
   watch.stop();
 }
 function stopWhenOn() {
-  btnStart.textContent = 'Start';
+  btnStart.textContent = "Start";
   watch.stop();
   watch.reset();
 }
-btnStart.addEventListener('click', function () {
+btnStart.addEventListener("click", function () {
   var audioHelloList = audioLists[7];
   if (!watch.isOnStartAudio) {
     audioPlay(audioHelloList);
   }
-  if (btnSubmits.textContent === 'Nộp bài') {
+  if (btnSubmits.textContent === "Nộp bài") {
     clearErrorMsg();
   }
   answerElement.focus();
@@ -307,28 +312,28 @@ btnStart.addEventListener('click', function () {
   start();
 });
 
-btnPause.addEventListener('click', function () {
+btnPause.addEventListener("click", function () {
   if (watch.isOn) {
     backgroundMusic.pause();
     stop();
   }
 });
 
-var coating = $.querySelector('.coating');
-coating.addEventListener('click', function () {
+var coating = $.querySelector(".coating");
+coating.addEventListener("click", function () {
   coatingStart();
 });
 function coatingStart() {
   coating.style.opacity = 1;
-  coating.innerHTML = 'Vui lòng Click Start để bắt đầu!';
+  coating.innerHTML = "Vui lòng Click Start để bắt đầu!";
 }
 function coatingEnd() {
   coating.style.opacity = 0;
-  coating.style.display = 'none';
+  coating.style.display = "none";
 }
 
-var suggestionsMsg = $.querySelector('.suggestions');
-var errorMessage = $.querySelector('.errorMessage');
+var suggestionsMsg = $.querySelector(".suggestions");
+var errorMessage = $.querySelector(".errorMessage");
 var warningMsgs;
 var answerValue;
 function testValue(answerElement) {
@@ -337,7 +342,7 @@ function testValue(answerElement) {
   var testPun = /[!:;"()',.?-]/;
   if (errorMessage) {
     if (correctAnswer !== answerValue) {
-      suggestionsMsg.textContent = '';
+      suggestionsMsg.textContent = "";
       if (!answerValue) {
         return (warningMsgs = `Mỗi ⭐ bằng 1k NÈ. <br> ⭐ Đang chờ bạn CHINH PHỤC hem!<br>*  *  *<br> "Không có Tri thức<br> là TỰ làm nhục CHÍNH MÌNH!" `);
       } else if (!regex.test(answerValue)) {
@@ -360,11 +365,11 @@ handleTest = () => {
   var warningMsg = testValue(answerElement);
   if (warningMsg) {
     errorMessage.innerHTML = warningMsg;
-    errorMessage.style.padding = '8px';
-    suggestionsMsg.style.padding = '10px 8px 0';
-    suggestionsMsg.style.marginTop = '10px';
-    answerElement.style.backgroundColor = ' #fad5d58c';
-    answerElement.classList.add('addInvalid');
+    errorMessage.style.padding = "8px";
+    suggestionsMsg.style.padding = "10px 8px 0";
+    suggestionsMsg.style.marginTop = "10px";
+    answerElement.style.backgroundColor = " #fad5d58c";
+    answerElement.classList.add("addInvalid");
     testResult = false;
   } else {
     clearErrorMsg();
@@ -372,81 +377,81 @@ handleTest = () => {
   }
 };
 clearErrorMsg = () => {
-  errorMessage.innerHTML = '';
-  suggestionsMsg.innerHTML = '';
-  errorMessage.style.padding = '0';
-  answerElement.style = '';
-  suggestionsMsg.style = '';
-  answerElement.classList = '';
-  submitResult.classList = '';
-  submitResult.innerHTML = '';
+  errorMessage.innerHTML = "";
+  suggestionsMsg.innerHTML = "";
+  errorMessage.style.padding = "0";
+  answerElement.style = "";
+  suggestionsMsg.style = "";
+  answerElement.classList = "";
+  submitResult.classList = "";
+  submitResult.innerHTML = "";
 };
 
-var cardNext = $.querySelector('#next');
+var cardNext = $.querySelector("#next");
 var congratulationMusic = audioLists[9];
-var medals = '';
-var stars = $.querySelector('.star');
-cardNext.addEventListener('click', () => {
+var medals = "";
+var stars = $.querySelector(".star");
+cardNext.addEventListener("click", () => {
   i = i;
   var audioErrorList = audioLists[0];
   var audioYeahList = audioLists[2];
   answerValue = answerElement.value;
-  submitResult.innerHTML = '';
+  submitResult.innerHTML = "";
 
   if (i >= 1 && i < minRequirements) {
-    btnSubmits.textContent = 'Stop';
+    btnSubmits.textContent = "Stop";
   }
   if (i + 1 === minRequirements) {
-    btnSubmits.textContent = 'Nộp bài!';
+    btnSubmits.textContent = "Nộp bài!";
   }
-  if (submitResult.matches('.correctResults') && coating.style.display === 'block') {
+  if (submitResult.matches(".correctResults") && coating.style.display === "block") {
     clearErrorMsg();
     return;
   }
   if (!watch.isOn) {
     coatingStart();
-  } else if (watch.isOn && submitResult.matches('.correctResult') && !answerValue) {
+  } else if (watch.isOn && submitResult.matches(".correctResult") && !answerValue) {
     answerElement.focus();
-    submitResult.classList = '';
-    submitResult.innerHTML = '';
+    submitResult.classList = "";
+    submitResult.innerHTML = "";
     return;
-  } else if (watch.isOn && flipCardInner.matches('.is-flipped') && !answerValue) {
-    flipCardInner.classList.remove('is-flipped');
-    suggestions.textContent = 'Xem gợi ý';
+  } else if (watch.isOn && flipCardInner.matches(".is-flipped") && !answerValue) {
+    flipCardInner.classList.remove("is-flipped");
+    suggestions.textContent = "Xem gợi ý";
     answerElement.focus();
     return;
   } else {
-    if (submitResult.matches('.correctResults')) {
-      submitResult.innerHTML = '';
-      submitResult.classList.remove('.correctResults');
-      btnSubmits.textContent = 'Stop!';
+    if (submitResult.matches(".correctResults")) {
+      submitResult.innerHTML = "";
+      submitResult.classList.remove(".correctResults");
+      btnSubmits.textContent = "Stop!";
       answerElement.focus();
       return;
     }
     handleTest();
     if (testResult === true) {
       answerElement.focus();
-      medals += '⭐';
-      submitResult.classList.add('correctResult');
+      medals += "⭐";
+      submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
-      cardNext.textContent = '⭐ ⭐ ⭐';
-      if (btnSubmits.textContent === 'Nộp bài!' && i + 1 === minRequirements) {
+      cardNext.textContent = "⭐ ⭐ ⭐";
+      if (btnSubmits.textContent === "Nộp bài!" && i + 1 === minRequirements) {
         submitResult.innerHTML = `Chúc mừng bạn!<br> Bạn đã vượt qua thử thách. <br> Bạn vẫn có thể tiếp tục luyện tập <br> Nếu bạn muốn nâng cao Trình độ!`;
         backgroundMusic.pause();
-        submitResult.classList.add('correctResults');
+        submitResult.classList.add("correctResults");
         audioPlay(congratulationMusic);
       } else {
         audioPlay(audioYeahList);
       }
       i++;
       handleUI();
-      answerElement.value = '';
+      answerElement.value = "";
     } else {
       medals = medals.slice(1);
-      submitResult.classList.add('correctResult');
+      submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
-      answerElement.placeholder = '💥💥💥💥💥💥💥💥💥💥💥💥💥';
-      cardNext.textContent = '💥 💥 💥';
+      answerElement.placeholder = "💥💥💥💥💥💥💥💥💥💥💥💥💥";
+      cardNext.textContent = "💥 💥 💥";
       audioPlay(audioErrorList);
       createRandomSong(songs);
     }
@@ -454,18 +459,18 @@ cardNext.addEventListener('click', () => {
   stars.textContent = `${medals}`;
 });
 
-var flipCardInner = $.querySelector('.flip-card-inner');
-answerElement.addEventListener('focus', function handleClearError(e) {
+var flipCardInner = $.querySelector(".flip-card-inner");
+answerElement.addEventListener("focus", function handleClearError(e) {
   playBackgroundMusic();
   clearErrorMsg();
-  cardNext.textContent = 'Tiếp tục';
-  if (flipCardInner.matches('.is-flipped')) {
-    flipCardInner.classList.remove('is-flipped');
-    suggestions.textContent = 'Xem gợi ý';
+  cardNext.textContent = "Trả Lời";
+  if (flipCardInner.matches(".is-flipped")) {
+    flipCardInner.classList.remove("is-flipped");
+    suggestions.textContent = "Xem gợi ý";
   }
   audioItem.pause();
-  answerElement.placeholder = 'Enter your answer! 🌻 🌻 🌻';
-  e.target.value = '';
+  answerElement.placeholder = "Enter your answer! 🌻 🌻 🌻";
+  e.target.value = "";
 });
 
 answerElement.oninput = function () {
@@ -474,41 +479,41 @@ answerElement.oninput = function () {
   autoGrow();
 };
 function autoGrow() {
-  answerElement.style.height = answerElement.scrollHeight + 'px';
+  answerElement.style.height = answerElement.scrollHeight + "px";
 }
-var suggestions = $.querySelector('#suggestions-btn');
-suggestions.addEventListener('click', () => {
+var suggestions = $.querySelector("#suggestions-btn");
+suggestions.addEventListener("click", () => {
   clearErrorMsg();
   if (!watch.isOn) {
     coatingStart();
-  } else if (answerElement.value === '') {
-    flipCardInner.classList.toggle('is-flipped');
-    if (flipCardInner.matches('.is-flipped')) {
-      suggestions.textContent = 'Đóng gợi ý';
+  } else if (answerElement.value === "") {
+    flipCardInner.classList.toggle("is-flipped");
+    if (flipCardInner.matches(".is-flipped")) {
+      suggestions.textContent = "Đóng gợi ý";
       if (isPlayIng) {
         pauseBackgroundMusic();
       }
       audioItem.play();
     } else {
       answerElement.focus();
-      suggestions.textContent = 'Xem gợi ý';
+      suggestions.textContent = "Xem gợi ý";
     }
     return;
   } else if (answerElement.value === correctAnswer) {
-    if (!flipCardInner.matches('.is-flipped')) {
+    if (!flipCardInner.matches(".is-flipped")) {
       congratulationMusic = audioLists[9];
       audioPlay(congratulationMusic);
-      suggestions.textContent = 'Đóng gợi ý';
-      flipCardInner.classList.toggle('is-flipped');
+      suggestions.textContent = "Đóng gợi ý";
+      flipCardInner.classList.toggle("is-flipped");
       suggestionsElement.innerHTML = `Xin chúc mừng bạn đã đưa ra đáp án hoàn toàn chính xác!`;
     } else {
       answerElement.focus();
-      suggestions.textContent = 'Xem gợi ý';
+      suggestions.textContent = "Xem gợi ý";
     }
   } else {
-    if (!flipCardInner.matches('.is-flipped')) {
-      flipCardInner.classList.toggle('is-flipped');
-      suggestions.textContent = 'Đóng gợi ý';
+    if (!flipCardInner.matches(".is-flipped")) {
+      flipCardInner.classList.toggle("is-flipped");
+      suggestions.textContent = "Đóng gợi ý";
       suggestionsMsg.innerHTML = `<div id='sum10'>Click Next để kiểm tra kết quả của bạn!</div>`;
       if (isPlayIng) {
         pauseBackgroundMusic();
@@ -516,42 +521,42 @@ suggestions.addEventListener('click', () => {
       audioItem.play();
     } else {
       answerElement.focus();
-      suggestions.textContent = 'Xem gợi ý';
+      suggestions.textContent = "Xem gợi ý";
     }
   }
 });
 
-var btnSubmits = $.querySelector('#btnSubmits');
-var submitResult = $.querySelector('#submitResult');
-btnSubmits.addEventListener('click', function () {
-  if (btnSubmits.textContent === 'Hướng dẫn') {
-    submitResult.classList.add('correctResult');
+var btnSubmits = $.querySelector("#btnSubmits");
+var submitResult = $.querySelector("#submitResult");
+btnSubmits.addEventListener("click", function () {
+  if (btnSubmits.textContent === "Hướng dẫn") {
+    submitResult.classList.add("correctResult");
     setDirectionBlock();
     return;
   }
 
-  if (btnSubmits.textContent === 'Stop' || (1 <= i && i < minRequirements)) {
-    submitResult.classList.add('correctResult');
+  if (btnSubmits.textContent === "Stop" || (1 <= i && i < minRequirements)) {
+    submitResult.classList.add("correctResult");
     submitResult.innerHTML = `<div id='sum10'>Bạn cần trả lời chính xác tối thiểu ${minRequirements} Câu hỏi trước khi bấm Dừng lại<br> Đừng nản chí! Kiên trì bạn sẽ Thành Công</div>`;
   }
 
   if (i === minRequirements) {
-    submitResult.classList.add('correctResults');
+    submitResult.classList.add("correctResults");
     submitResult.innerHTML = `Chúc mừng bạn đã vượt qua thử thách! <br> Kết quả của bạn đã được gửi tới hòm thư: nguyenthanhhoa075@gmail.com.`;
     backgroundMusic.pause();
     stop();
     watch.isOn ? stopWhenOn() : watch.reset();
     var audioGoodBeyList = audioLists[3];
     audioPlay(audioGoodBeyList);
-    coating.style.display = 'block';
+    coating.style.display = "block";
     coating.style.opacity = 0;
-    btnSubmits.textContent = 'SeeAgain!';
+    btnSubmits.textContent = "SeeAgain!";
     i = 0;
     progression.innerHTML = `00 /`;
   }
 });
 
-var audioElement = $.querySelector('#audios');
+var audioElement = $.querySelector("#audios");
 function audioPlay(audioList) {
   audioElement.src = `./assets/audio/${audioList}.mp3`;
   audioElement.play();
@@ -560,11 +565,11 @@ function audioPlay(audioList) {
 var backgroundMusic;
 var isPlayIng = false;
 function playBackgroundMusic() {
-  backgroundMusic = $.querySelector('#backgroundMusic');
+  backgroundMusic = $.querySelector("#backgroundMusic");
   isPlayIng = true;
   backgroundMusic.play();
   backgroundMusic.addEventListener(
-    'ended',
+    "ended",
     function () {
       this.currentTime = 0;
       this.play();
@@ -577,11 +582,11 @@ function pauseBackgroundMusic() {
   backgroundMusic.pause();
 }
 
-answerElement.addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
+answerElement.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
     event.preventDefault();
     cardNext.click();
-    answerValue = '';
+    answerValue = "";
   }
 });
 
@@ -606,28 +611,28 @@ function createRandomSong(songs) {
   }
   suggestionsMsg.textContent = `${songs[m]}`;
 }
-var moduleDirection = AppElement.querySelector('.moduleDirection');
-var direction = AppElement.querySelector('.direction');
+var moduleDirection = AppElement.querySelector(".moduleDirection");
+var direction = AppElement.querySelector(".direction");
 function setDirectionBlock() {
-  moduleDirection.style.display = 'block';
+  moduleDirection.style.display = "block";
 }
 function setDirectionNone() {
-  moduleDirection.style.display = 'none';
+  moduleDirection.style.display = "none";
 }
 function setAfterBlock() {
-  direction.style.setProperty('--AfterDpl', 'block');
+  direction.style.setProperty("--AfterDpl", "block");
 }
 function setAfterNone() {
-  direction.style.setProperty('--AfterDpl', 'none');
+  direction.style.setProperty("--AfterDpl", "none");
 }
 function setBeforeBlock() {
-  direction.style.setProperty('--dpn', 'block');
+  direction.style.setProperty("--dpn", "block");
 }
 function setBeforeNone() {
-  direction.style.setProperty('--dpn', 'none');
+  direction.style.setProperty("--dpn", "none");
 }
-var directionClose = moduleDirection.querySelector('.direction_close');
-var directionContinue = moduleDirection.querySelector('.direction_continue');
-directionClose.addEventListener('click', function () {
+var directionClose = moduleDirection.querySelector(".direction_close");
+var directionContinue = moduleDirection.querySelector(".direction_continue");
+directionClose.addEventListener("click", function () {
   setDirectionNone();
 });
