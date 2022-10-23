@@ -13,9 +13,27 @@
     <div id="root">
       <div class="app" id="App">
         <div class="App_container">
-          <span class="direction">
-            Nhấn mở Menu <span class="continue">Đi tiếp</span>
-          </span>
+          <div class="moduleDirection">
+            <span class="direction">
+              <span class="direction_content">Nhấn mở Menu</span>
+              <span class="direction_continue">⏭</span
+              ><span class="direction_close">❌</span>
+            </span>
+            <div class="moduleDirection_content">
+              <p>Trong Menu bạn lựa chọn nội dung cần luyện tập</p>
+              <p>Bấm Start để bắt đâu trả lời câu hỏi</p>
+              <p>Nhập xong đáp án bấm tiếp tục để đi tiếp</p>
+              <p>
+                Không nghĩ được đáp án bấm "Xem gợi ý" để nhận trợ giúp (Chỉ
+                những câu khó)
+              </p>
+              <p>Khi click Start sẽ bắt đầu tính thời gian</p>
+              <p>Cảm ơn bạn đã ủng hộ chúng tôi!</p>
+              <p>
+                Vui lòng không tự động sao chép, chia sẻ dưới mọi hình thức.
+              </p>
+            </div>
+          </div>
           <div class="App_header">
             <div class="Courses_header-left">
               <div class="menuSvg openMenu">
@@ -96,7 +114,7 @@
               <div class="App-group">
                 <div class="Control_question">
                   <div class="Group_title">
-                    <div class="Question_title">Question:❓</div>
+                    <div class="Question_title">Question:</div>
                     <div class="categories">Yêu cầu đề bài</div>
                     <div class="productivity">
                       <span class="progression">01 /</span>
@@ -156,15 +174,15 @@
                       <button id="suggestions-btn" class="btn">
                         Xem gợi ý ✨
                       </button>
-                      <button id="next" class="btn">Tiếp tục ⏩</button>
+                      <button id="next" class="btn">Tiếp tục</button>
                     </div>
                   </div>
                   <div id="submitResult" class=""></div>
                   <div class="Group_control mt10">
                     <div class="show-btn">
                       <div id="btnSubmits" class="control_btn">Hướng dẫn</div>
-                      <div id="btnPause" class="control_btn">Pause ⏸</div>
-                      <div id="btnStart" class="control_btn">Start ▶</div>
+                      <div id="btnPause" class="control_btn">Pause</div>
+                      <div id="btnStart" class="control_btn">Start</div>
                     </div>
                   </div>
                 </div>
