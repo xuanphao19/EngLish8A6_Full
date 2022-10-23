@@ -184,7 +184,6 @@ canvas#canvas {
   top: 9px;
   left: 9px;
   margin: 0 auto;
-  /* padding-top: 138px; */
   padding-right: 12px;
   padding-left: 12px;
   width: 298px;
@@ -251,7 +250,6 @@ span.suggestionsBack {
   margin-top: 6px;
   min-height: 42px;
   border-radius: 4px;
-  /* background-color: #fbfdff6f; */
   box-shadow: 0 2px 4px 4px rgb(100 100 100 / 5%);
 }
 
@@ -381,7 +379,6 @@ span.suggestionsBack {
 .Group_title {
   display: flex;
   align-items: center;
-  /* margin-bottom: 4px; */
   width: 100%;
   padding: 0px 10px 0 5px;
   font-size: 1rem;
@@ -841,4 +838,32 @@ textarea#answer_content.unInvalid {
   padding: 10px 10px 10px 15px;
   margin-top: 10px;
   font-family: "Open Sans", sans-serif;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.Comtrol_answers {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  max-width: 100%;
+  margin-left: 4px;
+  padding-bottom: 1px;
+  font-size: 0.7rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  border-radius: 99999999999px;
+  background-color: #6aff002d;
+  animation: loading04 0.3s infinite linear;
+  z-index: 99999999;
+}
+
+.stars {
+  display: inline-block;
+  min-width: 5px;
+  max-width: 326px;
+  min-height: 15px;
 }
