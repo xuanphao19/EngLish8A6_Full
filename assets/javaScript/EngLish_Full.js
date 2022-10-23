@@ -586,7 +586,7 @@ cardNext.addEventListener("click", () => {
     } else {
       medals = medals.slice(1);
       submitResult.classList.add("correctResult");
-      submitResult.innerHTML = `<div id='sum10'>Chúc mừng bạn Quay vào Ô: Trừ 1 ⭐ </div>`;
+      submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
       answerElement.placeholder = "💥💥💥💥💥💥💥💥💥💥💥💥💥";
       audioPlay(audioErrorList);
       createRandomSong(songs);
