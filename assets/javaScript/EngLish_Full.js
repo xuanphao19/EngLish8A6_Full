@@ -429,6 +429,7 @@ cardNext.addEventListener('click', () => {
       medals += '⭐';
       submitResult.classList.add('correctResult');
       submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
+      cardNext.textContent = '⭐ ⭐ ⭐';
       if (btnSubmits.textContent === 'Nộp bài!' && i + 1 === minRequirements) {
         submitResult.innerHTML = `Chúc mừng bạn!<br> Bạn đã vượt qua thử thách. <br> Bạn vẫn có thể tiếp tục luyện tập <br> Nếu bạn muốn nâng cao Trình độ!`;
         backgroundMusic.pause();
@@ -445,6 +446,7 @@ cardNext.addEventListener('click', () => {
       submitResult.classList.add('correctResult');
       submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
       answerElement.placeholder = '💥💥💥💥💥💥💥💥💥💥💥💥💥';
+      cardNext.textContent = '💥 💥 💥';
       audioPlay(audioErrorList);
       createRandomSong(songs);
     }
@@ -456,6 +458,7 @@ var flipCardInner = $.querySelector('.flip-card-inner');
 answerElement.addEventListener('focus', function handleClearError(e) {
   playBackgroundMusic();
   clearErrorMsg();
+  cardNext.textContent = 'Tiếp tục';
   if (flipCardInner.matches('.is-flipped')) {
     flipCardInner.classList.remove('is-flipped');
     suggestions.textContent = 'Xem gợi ý';
