@@ -682,7 +682,7 @@ var submitResult = $.querySelector("#submitResult");
 btnSubmits.addEventListener("click", function () {
   if (btnSubmits.textContent === "Hướng dẫn") {
     submitResult.classList.add("correctResult");
-    submitResult.innerHTML = `<div id='sum10'>Bạn bấm Start để bắt đâu trả lời câu hỏi<br> Nhập xong đáp án bấm tiếp tục để đi tiếp <br>Không nghĩ được đáp án bấm "Xem gợi ý" để nhận trợ giúp (Chỉ những câu khó) <br> Khi click Start sẽ bắt đầu tính thời gian<br>Cảm ơn bạn đã ủng hộ chúng tôi! <br> Vui lòng không tự động sao chép, chia sẻ dưới mọi hình thức.🥇🥇🥇</div>`;
+    setDirectionBlock();
     return;
   }
 
@@ -764,14 +764,32 @@ function createRandomSong(songs) {
 }
 
 // Đặt lại giá trị cho thuộc tính CSS của phần tử giả thông qua biến CSS:
+
+var moduleDirection = AppElement.querySelector(".moduleDirection");
 var direction = AppElement.querySelector(".direction");
-function setDisplay() {
+function setDirectionBlock() {
+  moduleDirection.style.display = "block";
+}
+function setDirectionNone() {
+  moduleDirection.style.display = "none";
+}
+function setAfterBlock() {
+  direction.style.setProperty("--AfterDpl", "block");
+}
+function setAfterNone() {
+  direction.style.setProperty("--AfterDpl", "none");
+}
+function setBeforeBlock() {
   direction.style.setProperty("--dpn", "block");
 }
-function removeDisplay() {
+function setBeforeNone() {
   direction.style.setProperty("--dpn", "none");
 }
-setDisplay();
+var directionClose = moduleDirection.querySelector(".direction_close");
+var directionContinue = moduleDirection.querySelector(".direction_continue");
+directionClose.addEventListener("click", function () {
+  setDirectionNone();
+});
 
 // Ví dụ:
 // Xử lý giá trị CSS của Element và Element::after, Element::before
