@@ -89,7 +89,6 @@ img.App_avatar:hover {
   transform: scale(1.05);
 }
 
-.App_practice,
 .App_content {
   display: flex;
   flex-wrap: wrap;
@@ -100,8 +99,7 @@ img.App_avatar:hover {
 .App_flashcard {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 350px;
+  width: 316px;
   height: 316px;
 }
 
@@ -237,9 +235,7 @@ span.suggestionsBack {
   user-select: none;
   /* background-color: #f6f7f9; */
 }
-.App_practice .Group_btn {
-  min-height: 112px;
-}
+
 .Group_control {
   display: flex;
   align-items: center;
@@ -400,7 +396,7 @@ span.suggestionsBack {
   color: #415d00;
   font-size: 1.2rem;
   font-style: italic;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .progression {
@@ -410,7 +406,6 @@ textarea#answer_content,
 .Question_item {
   width: 100%;
   min-height: 41px;
-  padding: 8px 40px 8px 12px;
   outline: none;
   border-radius: 3px;
   box-sizing: border-box;
@@ -419,7 +414,9 @@ textarea#answer_content,
   text-align: justify;
   overflow: hidden;
 }
-
+.question_staging {
+  padding: 8px 40px 8px 12px;
+}
 textarea#answer_content:hover,
 .Question_item:hover,
 .Group_control:hover,
@@ -433,7 +430,7 @@ textarea#answer_content,
   font-size: 1rem;
   line-height: 1.4;
   color: #415d00;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 ::placeholder {
   color: #415d0077;
@@ -574,7 +571,7 @@ textarea#answer_content {
   border-radius: 3px;
   text-align: center;
   color: rgb(105, 101, 101);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .btn {
@@ -654,7 +651,7 @@ img.Courses_menu:hover,
   padding-top: 5px;
 }
 .direction::before {
-  content: '👆';
+  content: "👆";
   position: absolute;
   top: -21px;
   left: 13px;
@@ -662,7 +659,7 @@ img.Courses_menu:hover,
   display: var(--BeforeDpl);
 }
 .direction::after {
-  content: '👇';
+  content: "👇";
   position: absolute;
   font-size: 01.3rem;
   bottom: -20px;
@@ -698,7 +695,7 @@ img.Courses_close:hover {
 }
 .AppModule,
 .AppModule::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -735,6 +732,8 @@ img.Courses_close:hover {
   padding: 10px;
   border-radius: 5px;
   user-select: none;
+  word-break: break-word;
+  overflow-wrap: break-word;
   background-color: #fbfdff87;
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
   z-index: 9999;
@@ -786,6 +785,8 @@ h4.list_title {
 }
 
 .courseName {
+  word-break: break-word;
+  overflow-wrap: break-word;
   color: #415d00e6;
   text-align: left;
   margin-left: 8px;
@@ -818,7 +819,7 @@ textarea#answer_content.unInvalid {
   display: block;
   padding: 10px 10px 10px 15px;
   margin-top: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   word-break: break-word;
   overflow-wrap: break-word;
 }
@@ -845,4 +846,6 @@ textarea#answer_content.unInvalid {
   display: inline-block;
   max-width: 326px;
   min-height: 15px;
+}
+.ascvd {
 }
