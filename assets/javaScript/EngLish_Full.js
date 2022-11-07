@@ -6,7 +6,6 @@ var moduleElement = AppElement.querySelector(".AppModule");
 var answerElement = $.querySelector("#answer_content");
 function App() {
   followCourses.Start();
-  showAppModule();
   coursesItem();
   getRandomQuesId();
   handleUI();
@@ -19,14 +18,14 @@ function handleUI() {
   showSuggestions();
   // console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
-var showAppModule = function () {
+(function () {
   CoursesMenu.addEventListener("click", () => {
     moduleElement.removeEventListener("animationend", listenerClose);
     if (moduleElement) {
       moduleElement.style.display = "block";
     }
   });
-};
+})();
 function listenerClose() {
   moduleElement.style.animation = "";
   moduleElement.style.display = "none";
@@ -101,7 +100,7 @@ var categoriesEle = $.querySelector(".categories");
 progression = $.querySelector(".progression");
 total = $.querySelector(".total");
 function handleUI_Start() {
-  categoriesEle.innerHTML = `Luyện tập ${questionId}`;
+  categoriesEle.innerHTML = `Luyện: ${questionId}`;
   if (i < 10) {
     progression.innerHTML = `0${i} / `;
   } else {
@@ -191,15 +190,14 @@ function showSuggestions() {
 var dates = new Date();
 var date = dates.getDate();
 var current_date;
+var current_day = dates.getDay();
+var day_name = "";
+var sideTime = document.querySelectorAll(".side");
 if (date < 10) {
   current_date = `Ngày 0${dates.getDate()} / ${dates.getMonth() + 1} / ${dates.getFullYear()}`;
 } else {
   current_date = `Ngày: ${dates.getDate()} Tháng: ${dates.getMonth() + 1} Năm: ${dates.getFullYear()}`;
 }
-$.querySelector(".shows_date").innerHTML = current_date;
-$.querySelector(".shows_dates").innerHTML = current_date;
-var current_day = dates.getDay();
-var day_name = "";
 switch (current_day) {
   case 0:
     day_name = "Chủ nhật";
@@ -222,9 +220,9 @@ switch (current_day) {
   case 6:
     day_name = "Thứ bảy";
 }
-$.querySelector(".shows_time").innerHTML = day_name;
-$.querySelector(".shows_times").innerHTML = day_name;
-
+sideTime.forEach((element) => {
+  element.innerHTML = `${day_name} ${current_date}`;
+});
 var timeSum = AppElement.querySelector(".timeSum");
 class Stopwatch {
   constructor(elem) {
