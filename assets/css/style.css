@@ -3,6 +3,19 @@
   margin: 0;
   padding: 0;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
 body {
   font-size: 62.5%;
   font-family: Lato, sans-serif;
@@ -269,32 +282,11 @@ span.suggestionsBack {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
-  font-size: 2.4rem;
-  background: linear-gradient(to right, #5180a7e2, #f6ae94eb);
-  animation: cubeRotates 1s linear infinite;
-}
-
-.shows_date,
-.shows_dates,
-.shows_times,
-.shows_time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
-  line-height: 40px;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1rem;
   font-style: italic;
   color: rgb(0, 26, 255);
-}
-
-.shows_times,
-.shows_time {
-  padding: 0 35px;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
+  background: linear-gradient(to right, #5180a7e2, #f6ae94eb);
+  animation: cubeRotates 1s linear infinite;
 }
 
 .front {
@@ -679,6 +671,7 @@ img.Courses_menu:hover,
 }
 .direction_close {
   margin-left: 10px;
+  margin-right: 3px;
 }
 .direction_close:hover,
 span.direction_continue:hover {
@@ -761,6 +754,7 @@ h4.list_title {
   0% {
     opacity: 1;
     z-index: 90;
+    transform: scale(1);
   }
   100% {
     transform: scale(0);
@@ -846,6 +840,4 @@ textarea#answer_content.unInvalid {
   display: inline-block;
   max-width: 326px;
   min-height: 15px;
-}
-.ascvd {
 }
