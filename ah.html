@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+        font-family: Lato, sans-serif;
+      }
+      #calendar {
+        width: 400px;
+        margin: 0px auto;
+        margin-top: 80px;
+      }
+      .weeks {
+        display: flex;
+        width: 100%;
+        font-size: 1.2rem;
+        color: rebeccapurple;
+      }
+      .todays,
+      .week {
+        width: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5;
+        align-items: center;
+        background-color: #edfff982;
+      }
+      .todays,
+      .week:not(:first-child) {
+        border-left: 1px solid rgba(0, 0, 0, 0.07);
+      }
+      .todays {
+        color: #43b0ff;
+      }
+      .today,
+      .dates {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: rgba(51, 0, 255, 0.914);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      span.today {
+        width: 26px;
+        height: 24px;
+        border-radius: 9999px;
+        background: linear-gradient(180deg, rgba(94, 187, 255, 0.4), rgba(161, 116, 255, 0.4));
+      }
+      #calendar .sunday,
+      #calendar .sunday span {
+        background-color: #ffeaeab8;
+        color: #f00;
+      }
+      #calendar .saturday,
+      #calendar .saturday span {
+        background-color: #f0ffed;
+        color: #007021;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="calendar">
+      <div class="weeks">
+        <div class="week"></div>
+        <div class="week"></div>
+        <div class="week"></div>
+        <div class="week"></div>
+        <div class="week"></div>
+        <div class="week"></div>
+        <div class="todays">
+          <span class="weekToday">Today</span>
+          <span class="today"></span>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var weekdays = document.querySelectorAll(".week");
+      var Dates = document.querySelectorAll(".dates");
+      var todays = document.querySelector(".todays");
+      var today = document.querySelector(".today");
+      var dd;
+      var setDay;
+      var dates = [];
+      var days = [];
+
+      for (var i = 0; i > -7; ) {
+        // var d = new Date("Oct 05, 1975 17:15:30");
+        var d = new Date();
+        dd = d.getDate();
+        setDay = d.getDay();
+        d.setDate(dd + i);
+        dates.push(d.getDate());
+        var day = d.getDay(d);
+        switch (day) {
+          case 0:
+            days.push("Sun");
+            break;
+          case 1:
+            days.push("Mon");
+            break;
+          case 2:
+            days.push("Tue");
+            break;
+          case 3:
+            days.push("Wed");
+            break;
+          case 4:
+            days.push("Thu");
+            break;
+          case 5:
+            days.push("Fri");
+            break;
+          case 6:
+            days.push("Sat");
+        }
+        i--;
+      }
+
+      today.textContent = `${dd}`;
+      for (var weekday of weekdays) {
+        weekday.innerHTML = `<span class="weekday">${days.pop()}</span>
+                            <span class="dates">${dates.pop()}</span>`;
+        if (weekday.textContent.includes("Sun")) {
+          weekday.classList.add("sunday");
+        } else {
+          if (weekday.matches(".sunday")) {
+            weekday.classList.remove("sunday");
+          }
+        }
+        if (weekday.textContent.includes("Sat")) {
+          weekday.classList.add("saturday");
+        } else {
+          if (weekday.matches(".saturday")) {
+            weekday.classList.remove("saturday");
+          }
+        }
+      }
+      if (setDay === 0) {
+        todays.classList.add("sunday");
+      } else if (setDay === 6) {
+        todays.classList.add("saturday");
+      } else {
+        if (todays.matches(".saturday") || todays.matches(".sunday")) {
+          todays.classList.remove("saturday");
+          todays.classList.remove("sunday");
+        }
+      }
+    </script>
+  </body>
+</html>
