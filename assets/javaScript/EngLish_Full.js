@@ -388,6 +388,7 @@ clearErrorMsg = () => {
 var cardNext = $.querySelector("#next");
 var congratulationMusic = audioLists[9];
 var medals = "";
+var z = 0;
 var stars = $.querySelector(".star");
 cardNext.addEventListener("click", () => {
   i = i;
@@ -430,8 +431,9 @@ cardNext.addEventListener("click", () => {
     if (testResult === true) {
       answerElement.focus();
       medals += "⭐";
+      z++;
       submitResult.classList.add("correctResult");
-      submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
+      submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${z} ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
       cardNext.textContent = "⭐ ⭐ ⭐";
       if (btnSubmits.textContent === "Nộp bài!" && i + 1 === minRequirements) {
         submitResult.innerHTML = `Chúc mừng bạn!<br> Bạn đã vượt qua thử thách. <br> Bạn vẫn có thể tiếp tục luyện tập <br> Nếu bạn muốn nâng cao Trình độ!`;
@@ -446,6 +448,7 @@ cardNext.addEventListener("click", () => {
       answerElement.value = "";
     } else {
       medals = medals.slice(1);
+      z--;
       submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
       answerElement.placeholder = "💥💥💥💥💥💥💥💥💥💥💥💥💥";
