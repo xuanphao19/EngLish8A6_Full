@@ -16,7 +16,7 @@ function handleUI() {
   questPictures();
   speakerWaves();
   showSuggestions();
-  // console.log(`Gợi ý dành cho bạn: `, correctAnswer);
+  console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
 (function () {
   CoursesMenu.addEventListener("click", () => {
@@ -69,6 +69,8 @@ function coursesItem() {
   unitList.addEventListener("click", function (e) {
     i = 0;
     j = 0;
+    medals = [];
+    stars.textContent = `${medals} ⭐ ⭐ ⭐`;
     randomNumbers = [];
     const tgt = e.target;
     if (tgt.closest(".Courses_item")) {
@@ -329,7 +331,6 @@ function coatingEnd() {
   coating.style.opacity = 0;
   coating.style.display = "none";
 }
-
 var suggestionsMsg = $.querySelector(".suggestions");
 var errorMessage = $.querySelector(".errorMessage");
 var warningMsgs;
@@ -387,7 +388,7 @@ clearErrorMsg = () => {
 
 var cardNext = $.querySelector("#next");
 var congratulationMusic = audioLists[9];
-var medals = "";
+var medals = [];
 var z = 0;
 var stars = $.querySelector(".star");
 cardNext.addEventListener("click", () => {
@@ -430,7 +431,7 @@ cardNext.addEventListener("click", () => {
     handleTest();
     if (testResult === true) {
       answerElement.focus();
-      medals += "⭐";
+      medals.push("⭐");
       z++;
       submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Bạn đã nhân được: ${z} ${medals} <br> Mỗi ⭐ = 1k Cố săn thật nhiều ⭐ nha! </div>`;
@@ -447,8 +448,8 @@ cardNext.addEventListener("click", () => {
       handleUI();
       answerElement.value = "";
     } else {
-      medals = medals.slice(1);
       z--;
+      medals.pop();
       submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
       answerElement.placeholder = "💥💥💥💥💥💥💥💥💥💥💥💥💥";
