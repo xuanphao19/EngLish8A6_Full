@@ -70,7 +70,7 @@ unitList.addEventListener("click", function (e) {
   i = 0;
   j = 0;
   medals = [];
-  stars.textContent = `${medals} ⭐ ⭐ ⭐`;
+  stars.textContent = `${medals.join("")} ⭐ ⭐ ⭐`;
   randomNumbers = [];
   const tgt = e.target;
   if (tgt.closest(".Courses_item")) {
@@ -449,6 +449,9 @@ cardNext.addEventListener("click", () => {
       answerElement.value = "";
     } else {
       z--;
+      if (z < 0) {
+        z = 0;
+      }
       medals.pop();
       submitResult.classList.add("correctResult");
       submitResult.innerHTML = `<div id='sum10'>Xin Chúc mừng: <br> Bạn đã Quay vào Ô: Trừ 1 ⭐ </div>`;
@@ -458,7 +461,7 @@ cardNext.addEventListener("click", () => {
       createRandomSong(songs);
     }
   }
-  stars.textContent = `${medals}`;
+  stars.textContent = `${medals.join("")}  ${z}k`;
 });
 
 var flipCardInner = $.querySelector(".flip-card-inner");
