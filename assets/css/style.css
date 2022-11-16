@@ -825,10 +825,12 @@ textarea#answer_content.unInvalid {
   position: absolute;
   top: -7px;
   left: 0;
-  max-width: 100%;
-  margin-left: 4px;
+  display: block;
+  width: 100%;
+  padding: 0 8px;
   padding-bottom: 1px;
   font-size: 0.7rem;
+  text-align: center;
   word-break: break-word;
   overflow-wrap: break-word;
   border-radius: 99999999999px;
