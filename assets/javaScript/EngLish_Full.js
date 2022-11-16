@@ -6,7 +6,7 @@ var moduleElement = AppElement.querySelector(".AppModule");
 var answerElement = $.querySelector("#answer_content");
 function App() {
   followCourses.Start();
-  coursesItem();
+  // coursesItem();
   getRandomQuesId();
   handleUI();
 }
@@ -63,25 +63,25 @@ function randomNumber(max) {
     randomNumbers = [];
   }
 }
-var unitList = moduleElement.querySelector(".Courses_list");
 var unitElement = unitList.querySelectorAll(".Courses_item");
-function coursesItem() {
-  unitList.addEventListener("click", function (e) {
-    i = 0;
-    j = 0;
-    medals = [];
-    stars.textContent = `${medals} ⭐ ⭐ ⭐`;
-    randomNumbers = [];
-    const tgt = e.target;
-    if (tgt.closest(".Courses_item")) {
-      questionId = tgt.closest(".Courses_item").id;
-    }
-    closeModule();
-    clearErrorMsg();
-    getRandomQuesId(questionId);
-    handleUI();
-  });
-}
+// function coursesItem() {
+unitList.addEventListener("click", function (e) {
+  console.log(unitList, unitList);
+  i = 0;
+  j = 0;
+  medals = [];
+  stars.textContent = `${medals} ⭐ ⭐ ⭐`;
+  randomNumbers = [];
+  const tgt = e.target;
+  if (tgt.closest(".Courses_item")) {
+    questionId = tgt.closest(".Courses_item").id;
+  }
+  closeModule();
+  clearErrorMsg();
+  getRandomQuesId(questionId);
+  handleUI();
+});
+// }
 var Units;
 var lengths;
 var questionId = followCourses.unitCourses[0].id;

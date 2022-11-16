@@ -618,12 +618,6 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/1-1.mp3",
         ],
         [
-          "Mental",
-          "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Mental",
-          "Mental health affects how we think, feel, and act.",
-        ],
-        [
           "Physical",
           "Listen, rewrite what you hear:",
           "Gợi ý:<br> Physical",
@@ -2652,7 +2646,6 @@ var followCourses = {
   Start: function () {
     this.renderUnit();
   },
-
   unitCoursesArr: function (questionId) {
     minRequirements = 0;
     this.unitCourses.map((unitCourse) => {

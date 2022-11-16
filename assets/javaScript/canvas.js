@@ -41,7 +41,6 @@
   function drawNumbers(ctx, radius) {
     var ang;
     var num;
-    var gradient;
     ctx.font = radius * 0.16 + "px Verdana";
     ctx.textBaseline = "middle";
     ctx.textAlign = "center";
@@ -56,6 +55,16 @@
       ctx.translate(0, radius * 0.8);
       ctx.rotate(-ang);
     }
+    var grd = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    grd.addColorStop(0, "blue");
+    grd.addColorStop(0.1, "red");
+    grd.addColorStop(0.1, "green");
+    ctx.font = "italic 15px Verdana";
+    ctx.fillStyle = grd;
+    ctx.shadowOffsetX = -2;
+    ctx.shadowOffsetY = 1;
+    ctx.shadowColor = "white";
+    ctx.fillText("English 8A6 Full", 0, 70);
   }
 
   function drawTime(ctx, radius) {
@@ -65,10 +74,7 @@
     var second = now.getSeconds();
     //hour
     hour = hour % 12;
-    hour =
-      (hour * Math.PI) / 6 +
-      (minute * Math.PI) / (6 * 60) +
-      (second * Math.PI) / (360 * 60);
+    hour = (hour * Math.PI) / 6 + (minute * Math.PI) / (6 * 60) + (second * Math.PI) / (360 * 60);
     drawHand(ctx, hour, radius * 0.46, radius * 0.08);
     //minute
     minute = (minute * Math.PI) / 30 + (second * Math.PI) / (30 * 60);
