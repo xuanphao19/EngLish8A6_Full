@@ -830,6 +830,7 @@ textarea#answer_content.unInvalid {
   padding: 0 8px;
   padding-bottom: 1px;
   font-size: 0.7rem;
+  color: red;
   text-align: center;
   word-break: break-word;
   overflow-wrap: break-word;
