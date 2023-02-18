@@ -25,7 +25,7 @@ function handleUI() {
   questPictures();
   speakerWaves();
   showSuggestions();
-  // console.log(`Gợi ý dành cho bạn: `, correctAnswer);
+  console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
 (function () {
   CoursesMenu.addEventListener("click", () => {
