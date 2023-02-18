@@ -25,7 +25,7 @@ function handleUI() {
   questPictures();
   speakerWaves();
   showSuggestions();
-  console.log(`Gợi ý dành cho bạn: `, correctAnswer);
+  // console.log(`Gợi ý dành cho bạn: `, correctAnswer);
 }
 (function () {
   CoursesMenu.addEventListener("click", () => {
@@ -126,7 +126,6 @@ function getRandomQuestion() {
   lengths = Units.length;
   randomNumber(lengths);
   randomQuestion = Units[n];
-  console.log(randomQuestion);
   questionStaging.innerHTML = randomQuestion[1];
   correctAnswer = randomQuestion[0];
 }
