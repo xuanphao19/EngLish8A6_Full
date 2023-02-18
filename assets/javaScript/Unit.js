@@ -2,7 +2,7 @@ var unitList = document.querySelector(".Courses_list");
 var followCourses = {
   unitCourses: [
     {
-      id: "EngLish8_Full",
+      id: "EngLish8A6_Full",
       className: "Courses_item",
       image: "./assets/img/MisaCute.png",
       minReq: 20,
