@@ -1,5 +1,14 @@
-// ***************************************** Create App *********************************************
-var AppElement = document.querySelector("#App");
+// ********************* Create App **************************
+const select = (el, all = false) => {
+  el = el.trim();
+  if (all) {
+    return [...document.querySelectorAll(el)];
+  } else {
+    return document.querySelector(el);
+  }
+};
+
+var AppElement = select("#App");
 var $ = AppElement.querySelector(".App_content");
 var CoursesMenu = AppElement.querySelector(".openMenu");
 var moduleElement = AppElement.querySelector(".AppModule");
@@ -39,10 +48,10 @@ function closeModule(_e) {
   moduleElement.addEventListener("animationend", listenerClose);
 }
 
+var minRequirements = followCourses.unitCourses[0].minReq;
 var randomNumbers = [];
 var n = 0;
 var j = 0;
-var minRequirements = followCourses.unitCourses[0].minReq;
 var i = 0;
 function randomNumber(max) {
   j++;
@@ -102,7 +111,7 @@ var categoriesEle = $.querySelector(".categories");
 progression = $.querySelector(".progression");
 total = $.querySelector(".total");
 function handleUI_Start() {
-  categoriesEle.innerHTML = `Luyện: ${questionId}`;
+  categoriesEle.innerHTML = `${questionId}`;
   if (i < 10) {
     progression.innerHTML = `0${i} / `;
   } else {
@@ -117,6 +126,7 @@ function getRandomQuestion() {
   lengths = Units.length;
   randomNumber(lengths);
   randomQuestion = Units[n];
+  console.log(randomQuestion);
   questionStaging.innerHTML = randomQuestion[1];
   correctAnswer = randomQuestion[0];
 }
@@ -194,11 +204,14 @@ var date = dates.getDate();
 var current_date;
 var current_day = dates.getDay();
 var day_name = "";
-var sideTime = document.querySelectorAll(".side");
+var sideTime = select(".side", (all = true));
+
 if (date < 10) {
   current_date = `Ngày 0${dates.getDate()} / ${dates.getMonth() + 1} / ${dates.getFullYear()}`;
 } else {
-  current_date = `Ngày: ${dates.getDate()} Tháng: ${dates.getMonth() + 1} Năm: ${dates.getFullYear()}`;
+  current_date = `Ngày: ${dates.getDate()} Tháng: ${
+    dates.getMonth() + 1
+  } Năm: ${dates.getFullYear()}`;
 }
 switch (current_day) {
   case 0:
@@ -579,7 +592,7 @@ function playBackgroundMusic() {
       this.currentTime = 0;
       this.play();
     },
-    false,
+    false
   );
 }
 function pauseBackgroundMusic() {
