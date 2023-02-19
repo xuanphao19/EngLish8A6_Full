@@ -21,7 +21,7 @@ var followCourses = {
           "Gợi ý:<br> My favourite leisure activity is arranging flowers.",
           "Hatrang.png",
         ],
-        ["Leisure activity", "hoạt động lúc rảnh rỗi", "Gợi ý:<br> ... activity ", "MisaCute.png"],
+        ["Leisure activity", "hoạt động lúc rảnh rỗi", "Gợi ý:<br> ... activity", "MisaCute.png"],
         [
           "Girls love window shopping.",
           "Listen, rewrite what you hear:",
@@ -1107,10 +1107,10 @@ var followCourses = {
           "MisaCute.png",
         ],
         [
-          "You're kidding! ",
+          "You're kidding!",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit4/lesson1/vocab/audio/14.mp3",
-          "Gợi ý:<br>You're kidding! ",
+          "Gợi ý:<br>You're kidding!",
           "PhotDoi.jpg",
         ],
         [
@@ -1462,7 +1462,7 @@ var followCourses = {
         [
           "Curious about",
           "adj) tò mò về",
-          "Gợi ý:<br> Curious about ",
+          "Gợi ý:<br> Curious about",
           "tapthe8A6.png",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/10.mp3",
         ],
@@ -1507,7 +1507,7 @@ var followCourses = {
         [
           "Festival",
           "n) Lễ hội",
-          "Gợi ý:<br> Festival ",
+          "Gợi ý:<br> Festival",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson2/vocab/audio/6.mp3",
         ],
         [
@@ -1763,13 +1763,13 @@ var followCourses = {
         [
           "Why do you like to eat 'Thang Co' a dish of the H'mong?",
           "Hoàn thành câu: ...do you like to eat 'Thang Co' a dish of the H'mong?",
-          // "Dịch câu: Tại sao bạn lại thích ăn món "Thắng Cố" - một món ăn của người dân tộc H'Mông thế?",
+          // "Dịch câu: Tại sao bạn lại thích ăn món "Thắng Cố"- một món ăn của người dân tộc H'Mông thế?",
           "Gợi ý:<br> Why do you like to eat 'Thang Co' a dish of the H'mong?",
           "3",
         ],
         [
           "What gifts do you often buy when you visit Ha Giang province?",
-          "Hoàn thành câu: ...gifts do you often buy when you visit Ha Giang province? ",
+          "Hoàn thành câu: ...gifts do you often buy when you visit Ha Giang province?",
           // "Dịch câu: Bạn thường mua quà tặng gì khi tới thăm tỉnh Hà Giang?",
           "Gợi ý:<br> What gifts do you..?",
           "3",
@@ -1880,7 +1880,7 @@ var followCourses = {
         ],
         [
           "The most appropriate manner of greeting the Vietnamese is a gentle handshake and a smile.",
-          "Hoàn thành: ... most appropriate manner of greeting ... Vietnamese is ... gentle handshake and a smile. ",
+          "Hoàn thành: ... most appropriate manner of greeting ... Vietnamese is ... gentle handshake and a smile.",
           "Gợi ý:<br> The most appropriate manner of greeting the Vietnamese is a gentle handshake and a smile.",
           "3",
         ],
@@ -2002,10 +2002,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson2/vocab/audio/3-1.mp3",
         ],
         [
-          "Hanoi is famous for Ngoc Son temple. ",
+          "Hanoi is famous for Ngoc Son temple.",
           // "Listen, rewrite what you hear:",
           "Dich câu: Hà Nội nổi tiếng với địa danh đền Ngọc Sơn.",
-          "Gợi ý:<br> Hanoi is famous for Ngoc Son temple. ",
+          "Gợi ý:<br> Hanoi is famous for Ngoc Son temple.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson2/vocab/audio/4-1.mp3",
         ],
         [
@@ -2117,91 +2117,91 @@ var followCourses = {
 
         [
           "Now, I would like to talk about the Cham people.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Bây giờ, tôi muốn trình bày về dân tộc chăm.",
           "Gợi ý:<br> Now, I would like...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/1.mp3",
         ],
         [
           "Have you ever talked to a Cham person? Well, there are many interesting things about this ethnic group that I want to share with you.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Các bạn đã bao giờ nói chuyện với 1 người dân tộc Chăm chưa? Dân tộc này có nhiều điều thú vị mà tôi muốn chia sẻ với các bạn sau đây.",
           "Gợi ý:<br> Have you ever talked to a Cham person? Well, there are many interesting things about this ethnic group that I want to share with you.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/2.mp3",
         ],
         [
           "I was really impressed by the folk dance of the Cham people. That's why I read more about them and here is some information I would like to tell you.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Tôi đã rất ấn tượng với điệu múa dân gian của người dân tộc Chăm. Do đó, tôi đã đọc nhiều hơn về họ và sau đây là 1 số thông tin tôi muốn chia sẻ cùng các bạn.",
           "Gợi ý:<br> I was really impressed by the folk dance of the Cham people. That's why I read more about them and here is some information I would like to tell you.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/3.mp3",
         ],
         [
           "With a population of 162 thousand, the Cham gather mainly in southern provinces such as Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Với dân số 162 nghìn người, dân tộc Chăm sống tập trung chủ yếu ở các tỉnh miền Nam như Ninh Thuận, Bình Thuận, Đồng Nai và Tây Ninh.",
           "Gợi ý:<br> With a population of 162 thousand, the Cham gather mainly in southern provinces such as Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/6.mp3",
         ],
         [
           "The Cham have a population of nearly 162 thousand people living in the provinces of Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Dân tộc Chăm có dân số gần 162 nghìn người sống ở các tỉnh Ninh Thuận, Bình Thuận, Đồng Nai và Tây Ninh.",
           "Gợi ý:<br> The Cham have a population of nearly 162 thousand people living in the provinces of Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/7.mp3",
         ],
         [
           "Their language belongs to the Malayo-Polynesian group.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Ngôn ngữ của họ thuộc ngữ hệ Nam đảo.",
           "Gợi ý:<br> Their language belongs to the Malayo-Polynesian group.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/8.mp3",
         ],
         [
           "The Cham language belongs to the Malayo-Polynesian group.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Ngôn ngữ của người Chăm thuộc ngữ hệ Nam đảo.",
           "Gợi ý:<br> The Cham language belongs to the Malayo-Polynesian group.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/9.mp3",
         ],
         // [
         //   "Well, their production activities are rather diverse. Like most other groups in Vietnam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
-        //   "Listen, rewrite what you hear: ",
+        //   "Listen, rewrite what you hear:",
         //   // "À, hoạt động sản xuất của họ khá đa dạng. Giống như hầu hết các dân tộc ở Việt Nam, họ trồng lúa nước. Bên cạnh đó, họ cũng đánh bắt cá và làm đồ thủ công. Tôi đã ấn tượng với đồ gốm thủ công của họ và tôi thích vải lụa của họ.",
         //   "Gợi ý:<br> Well, their production activities are rather diverse. Like most other groups in Vietnam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
         //   "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/14.mp3",
         // ],
         [
           "Their production activities include: cultivating wet rice, fishing and making handicrafts. The Cham are famous for their silk and hand-made pottery.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Hoạt động sản xuất của họ bao gồm: trồng lúa nước, đánh bắt cá và làm đồ thủ công. Người Chăm nổi tiếng với vải lụa và đồ gốm làm bằng tay.",
           "Gợi ý:<br> Their production activities include: cultivating wet rice, fishing and making handicrafts. The Cham are famous for their silk and hand-made pottery.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/15.mp3",
         ],
         [
           "The Cham have a tradition of wet rice cultivation. They are also experienced in fishing and making handicrafts, especially silk and hand-made pottery.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Người Chăm có truyền thống trồng lúa nước. Họ cũng có nhiều kinh nghiệm trong đánh bắt cá và làm đồ thủ công, đặc biệt là vải lụa và đồ gốm làm bằng tay.",
           "Gợi ý:<br> The Cham have a tradition of wet rice cultivation. They are also experienced in fishing and making handicrafts, especially silk and hand-made pottery.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/16.mp3",
         ],
         // [
         //   "Every year, they hold the Kate festival to commemorate the dead and honour heroes in the Cham community. Various agricultural ceremonies are performed during the year for a new canal, for young rice and for so many other occasions.",
-        //   "Listen, rewrite what you hear: ",
+        //   "Listen, rewrite what you hear:",
         //   // "Hàng năm, họ tổ chức lễ hội Ka-tê để tưởng nhớ những người đã khuất và vinh danh những người anh hùng trong cộng đồng người Chăm. Các nghi lễ nông nghiệp khác nhau cũng được tổ chức trong suốt cả năm vào dịp mừng 1 con kênh mới, mừng lúa non và rất nhiều các dịp khác nữa.",
         //   "Gợi ý:<br> Every year, they hold the Kate festival to commemorate the dead and honour heroes in the Cham community. Various agricultural ceremonies are performed during the year for a new canal, for young rice and for so many other occasions.",
         //   "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/19.mp3",
         // ],
         [
           "population",
-          "With the ... of about 400, the Brau people is one of the least populous groups in Vietnam. ",
+          "With the ... of about 400, the Brau people is one of the least populous groups in Vietnam.",
           // "Với dân số khoảng 400 người, dân tộc Brâu là một trong những dân tộc ít dân nhất ở Việt Nam.",
           // "Gợi ý:<br> population",
           "",
         ],
         [
           "gather or live",
-          "Hoàn thành: Most Brau people ... in Dac Me village, Bo Y commune, Ngoc Hoi district, Kon Tum province. ",
+          "Hoàn thành: Most Brau people ... in Dac Me village, Bo Y commune, Ngoc Hoi district, Kon Tum province.",
           // "Hầu hết người Brâu sống ở làng Đắc Mế, xã Bờ Y, huyện Ngọc Hồi, tỉnh Kon Tum.",
           // "Gợi ý:<br> gather or live",
           "",
@@ -2264,43 +2264,43 @@ var followCourses = {
           "",
         ],
         [
-          "Have you ever talked to a Cham person? Well, there are many fascinating things about this ethnic group that I want to share with you. ",
-          "Listen, rewrite what you hear: ",
-          "Gợi ý:<br> Have you ever talked to a Cham person? Well, there are many fascinating things about this ethnic group that I want to share with you. ",
+          "Have you ever talked to a Cham person? Well, there are many fascinating things about this ethnic group that I want to share with you.",
+          "Listen, rewrite what you hear:",
+          "Gợi ý:<br> Have you ever talked to a Cham person? Well, there are many fascinating things about this ethnic group that I want to share with you.",
           "",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/1.mp3",
         ],
         [
           "The Cham have a population of about 162 thousand inhabitants living in the provinces of Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           "Gợi ý:<br> The Cham have a population of about 162 thousand inhabitants living in the provinces of Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/2.mp3",
           "",
         ],
         [
           "Their language belongs to the Malayo-Polynesian group.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           "Gợi ý:<br> Their language belongs to the Malayo-Polynesian group.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/3.mp3",
           "",
         ],
         [
           "The Cham have a tradition of wet rice cultivation. They are also experienced in fishing and making handicrafts, especially silk and hand-made pottery.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           "Gợi ý:<br> The Cham have a tradition of wet rice cultivation. They are also experienced in fishing and making handicrafts, especially silk and hand-made pottery.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/4.mp3",
           "",
         ],
         [
           "Every year, they hold the Kate festival to commemorate the dead and honour heroes in the Cham community. Various agricultural ceremonies are performed during the year for a new canal, for young rice and for so many other occasions.",
-          "Listen, rewrite what you hear: ",
-          "Gợi ý:<br> Every year, they hold the Kate festival to commemorate...",
+          "Listen, rewrite what you hear:",
+          "Gợi ý:<br> Every year, they hold the Kate festival to commemorate the dead and honour heroes in the Cham community. Various agricultural ceremonies are performed during the year for a new canal, for young rice and for so many other occasions.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/5.mp3",
           "",
         ],
         [
           "Personally, I find the Cham ethnic people very interesting. Experience their way of life if possible, it's worth your time",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           "Gợi ý:<br> Personally, I find the Cham ethnic people very interesting...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/ex4/6.mp3",
           "",
@@ -2413,28 +2413,28 @@ var followCourses = {
         [
           "What is stored and served in large earthen jars?",
           "Viết lại câu sau: What is stored and served in large earthen jars?",
-          "Gợi ý:<br> ",
+          "Gợi ý:<br>",
           "",
           "",
         ],
         [
           "Where can I find restaurants serving the best dishes of 'carried-under-arm' pig? or Where can we find restaurants serving the best dishes of 'carried-under-arm' pig?",
           "Viết lại câu sau: Where can I find restaurants serving the best dishes of 'carried-under-arm' pig? or Where can we find restaurants serving the best dishes of 'carried-under-arm' pig?",
-          "Gợi ý:<br> ",
+          "Gợi ý:<br>",
           "",
           "",
         ],
         [
           "Who usually catch the frog for food in the forest when night falls?",
           "Viết lại câu sau: Who usually catch the frog for food in the forest when night falls?",
-          "Gợi ý:<br> ",
+          "Gợi ý:<br>",
           "",
           "",
         ],
         [
           "Why is the Coho's food often served dry?",
           "Viết lại câu sau: Why is the Coho's food often served dry?",
-          "Gợi ý:<br> ",
+          "Gợi ý:<br>",
           "",
           "",
         ],
@@ -2517,21 +2517,21 @@ var followCourses = {
         ],
         [
           "Have you ever talked to a Cham person? Well, there are many interesting things about this ethnic group that I want to share with you.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Các bạn đã bao giờ nói chuyện với 1 người dân tộc Chăm chưa? Dân tộc này có nhiều điều thú vị mà tôi muốn chia sẻ với các bạn sau đây.",
           "Gợi ý:<br> Have you ever talked to a Cham person? Well, there are many interesting things about this ethnic group that I want to share with you.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/2.mp3",
         ],
         [
           "I was really impressed by the folk dance of the Cham people. That's why I read more about them and here is some information I would like to tell you.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Tôi đã rất ấn tượng với điệu múa dân gian của người dân tộc Chăm. Do đó, tôi đã đọc nhiều hơn về họ và sau đây là 1 số thông tin tôi muốn chia sẻ cùng các bạn.",
           "Gợi ý:<br> I was really impressed by the folk dance of the Cham people. That's why I read more about them and here is some information I would like to tell you.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/3.mp3",
         ],
         [
           "With a population of 162 thousand, the Cham gather mainly in southern provinces such as Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
-          "Listen, rewrite what you hear: ",
+          "Listen, rewrite what you hear:",
           // "Với dân số 162 nghìn người, dân tộc Chăm sống tập trung chủ yếu ở các tỉnh miền Nam như Ninh Thuận, Bình Thuận, Đồng Nai và Tây Ninh.",
           "Gợi ý:<br> With a population of 162 thousand, the Cham gather mainly in southern provinces such as Ninh Thuan, Binh Thuan, Dong Nai and Tay Ninh.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/6.mp3",
@@ -2576,13 +2576,13 @@ var followCourses = {
         ],
         [
           "Bill has been addicted to online computer games since he left high school.",
-          "Hoàn thành câu: Bill has been ... since he left high school. (addict) ",
+          "Hoàn thành câu: Bill has been ... since he left high school. (addict)",
           "Gợi ý:<br> ... games since he left high school.",
           "ChinBacNuiRung.jpg",
         ],
         [
           "Are you satisfied with your exam results?",
-          "Hoàn thành câu: ... with your exam results? (satisfy) ",
+          "Hoàn thành câu: ... with your exam results? (satisfy)",
           "Gợi ý:<br> ... with your exam results?",
           "Dai_Nhan.png",
         ],
@@ -2594,7 +2594,7 @@ var followCourses = {
         ],
         [
           "What do you spend the majority of your time doing?",
-          "Hoàn thành câu: What do you ... your time doing? (major) ",
+          "Hoàn thành câu: What do you ... your time doing? (major)",
           "Gợi ý:<br> ... of your time doing?",
           "Hai_co_tam.png",
         ],
@@ -2606,19 +2606,19 @@ var followCourses = {
         ],
         [
           "The classmate sitting next to me treats us very generously.",
-          "Hoàn thành câu: The classmate sitting next to me ... (generous) ",
+          "Hoàn thành câu: The classmate sitting next to me ... (generous)",
           "Gợi ý:<br> ... me treats us very generously.",
           "MisaCute.png",
         ],
         [
           "Why are some people more curious than others?",
-          "Hoàn thành câu: Why are some people ... than others? (curious) ",
+          "Hoàn thành câu: Why are some people ... than others? (curious)",
           "Gợi ý:<br> ... more curious than others?",
           "Xuan_Phao19.png",
         ],
         [
           "You seem weirder than usual.",
-          "Hoàn thành câu: You seem ... than usual. (weird) ",
+          "Hoàn thành câu: You seem ... than usual. (weird)",
           "Gợi ý:<br> You seem weirder than usual.",
           "Xuan_Phao.png",
         ],
@@ -2643,7 +2643,7 @@ var followCourses = {
         //     //   image: "./assets/img/Hatrang.png",
         //     //   minReq: 10,
         //     //   info: [
-        //     //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br> ", ""],
+        //     //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br>", ""],
         //     //   ],
         //     // },
         //     // {
@@ -2671,8 +2671,8 @@ var followCourses = {
         //     //   minReq: 10,
         //     //   info: [
         //     //     // Từ vựng Unit 4:
-        //     //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
-        //     //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+        //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+        //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
 
         // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       ],
@@ -2681,9 +2681,9 @@ var followCourses = {
   renderUnit: function () {
     const htmls = this.unitCourses.map((unitItem) => {
       return `
-        <div id="${unitItem.id}" class="${unitItem.className}">
+        <div id="${unitItem.id}"class="${unitItem.className}">
           <div class="list_avatar">
-            <img src="${unitItem.image}" alt="${unitItem.id}" class="App_avatar" />
+            <img src="${unitItem.image}"alt="${unitItem.id}"class="App_avatar"/>
           </div>
           <span class="courseName"> ${unitItem.id}</span>
         </div>;
