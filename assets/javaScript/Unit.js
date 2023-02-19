@@ -135,14 +135,6 @@ var followCourses = {
           "v: đạp xe leo núi",
           "Gợi ý:<br> Một gánh sách không bằng một giáo viên giỏi",
         ],
-        ["Socialising", "n: hoạt động giao lưu", "Gợi ýTrọng thầy mới được làm thầy"],
-        ["Socialise", "v: giao lưu", "Gợi ý:<br> Muốn biết phải hỏi, muốn giỏi phải học"],
-        ["Texting", "n: nhắn tin", "Gợi ý", "Bán tự vi sư, nhất tự vi sư"],
-        [
-          "Text",
-          "v: nhắn tin",
-          "Gợi ý:<br> Thời gian dẫu bạc mái đầu <br> Tim trò vẫn tạc đậm câu ơn thầy",
-        ],
         [
           "Surfing the Internet",
           "n: lướt web",
@@ -184,7 +176,7 @@ var followCourses = {
           "Gợi ý:<br> ... sister's name?",
           "MisaCute.png",
         ],
-        ["DIY: Do-It-Yourself", "tự làm, tự sửa (đồ gì)", "Gợi ý:<br> DIY: Do-It-Yourself"],
+        ["DIY: Do-It-Yourself", "tự làm, tự sửa (đồ gì)", "Gợi ý:<br>DIY: Do-It-Yourself"],
         [
           "Harvest time",
           "n: mùa thu hoạch, mùa gặt",
@@ -193,7 +185,7 @@ var followCourses = {
         [
           "Harvest = Collect",
           "v: thu hoạch, gặt",
-          "Gợi ý:<br> Giàu người ta chẳng có tham <br> Khó khăn ta liệu ta làm ta ăn.",
+          'Gợi ý:"Harvest = Collect"<br> Giàu người ta chẳng có tham <br> Khó khăn ta liệu ta làm ta ăn.',
         ],
         [
           "Ripe",
@@ -201,12 +193,12 @@ var followCourses = {
           "Gợi ý:<br> Cô kia cắt cỏ bên sông <br> Có muốn ăn nhãn thì lồng sang đây <br> Sang đây anh nắm cổ tay <br> Anh hỏi câu này: Có lấy anh chăng?",
         ],
         [
-          "Buffalo-drawn cart",
+          "Buffalo-drawn cart.",
           "xe trâu kéo",
           "Gợi ý:<br> Bao giờ cho gạo bén sàng? <br> Cho trăng bén gió, cho nàng bén anh?",
         ],
         [
-          "Grill fish in rice straw",
+          "Grill fish in rice straw.",
           "v: nướng cá bằng rơm",
           "Gợi ý:<br> Ước gì anh lấy được nàng <br> Để anh mua gạch Bát Tràng về xây <br> Xây dọc rồi lại xây ngang, <br> Xây hồ bán nguyệt cho nàng rửa chân.",
         ],
@@ -281,9 +273,9 @@ var followCourses = {
           "Gợi ý:<br> Cơm cha áo mẹ chữ thầy <br> Gắng công mà học có ngày thành danh.",
         ],
         [
-          "Flying kites in the wide open countryside is great fun",
+          "Flying kites in the wide open countryside is great fun.",
           "Viết lại vd(123) Fly a kite",
-          "Gợi ý:<br> Flying kites in the wide open countryside is great fun",
+          "Gợi ý:<br> Flying kites in the wide open ...",
         ],
         [
           "What is your father's name?",
@@ -300,13 +292,13 @@ var followCourses = {
         [
           "Vietnamese people are very hospitable",
           "Viết lại vd(123) với từ: Hospitable",
-          "Gợi ý:<br> Vietnamese people are very hospitable",
+          "Gợi ý:<br> Vietnamese people...",
         ],
         [
           "Livestock include farm animals such as buffalo, cow, goat or sheep",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson2/vocab/audio/3-1.mp3",
-          "Gợi ý:<br> Livestock include farm animals such as buffalo, cow, goat or sheep",
+          "Gợi ý:<br> Livestock include farm...",
         ],
         [
           "Paddy field",
@@ -322,7 +314,7 @@ var followCourses = {
           "Go herding the buffaloes",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson1/vocab/audio/11.mp3",
-          "Gợi ý:<br> Go herding the buffaloes",
+          "Gợi ý:<br> Go herding...",
         ],
         [
           "Herd the buffaloes",
@@ -334,79 +326,79 @@ var followCourses = {
           "Mountain biking on Sunday is really exciting.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/6-1.mp3",
-          "Gợi ý:<br> Mountain biking on Sunday is really exciting.",
+          "Gợi ý:<br> Mountain biking...",
         ],
         [
           "You should go mountain biking more often.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/7-1.mp3",
-          "Gợi ý:<br> You should go mountain biking more often.",
+          "Gợi ý:<br> You should go...",
         ],
         [
           "There isn't much socialising at the party.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/8-1.mp3",
-          "Gợi ý:<br> There isn't much socialising at the party.",
+          "Gợi ý:<br> There isn't...",
         ],
         [
           "She socialised with many new friends at the summer camp.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/9-1.mp3",
-          "Gợi ý:<br> She socialised with many new friends at the summer camp.",
+          "Gợi ý:<br> She socialised with...",
         ],
         [
           "Too much texting can be harmful to our health.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/10-1.mp3",
-          "Gợi ý:<br> Too much texting can be harmful to our health.",
+          "Gợi ý:<br> Too much texting...",
         ],
         [
           "She pulled out the phone and sent him a text.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/11-2.mp3",
-          "Gợi ý:<br> She pulled out the phone and sent him a text.",
+          "Gợi ý:<br> She pulled...",
         ],
         [
           "Surfing the Internet has become his daily routine.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/12-1.mp3",
-          "Gợi ý:<br> Surfing the Internet has become his daily routine.",
+          "Gợi ý:<br> Surfing the...",
         ],
         [
           "I often surf the net for learning tips.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson2/ly-thuyet/audio/13-1.mp3",
-          "Gợi ý:<br> I often surf the net for learning tips.",
+          "Gợi ý:<br> I often...",
         ],
         [
           "He won the first prize for breaking bricks.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson3/ex3/1.mp3",
-          "Gợi ý:<br> He won the first prize for breaking bricks.",
+          "Gợi ý:<br> He won the...",
         ],
         [
           "The presentation provided brilliant ideas.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson3/ex3/2.mp3",
-          "Gợi ý:<br> The presentation provided brilliant ideas.",
+          "Gợi ý:<br> The presentation...",
         ],
         [
           "Brian is preparing a brief presentation on practicing british accent.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson3/ex3/3.mp3",
-          "Gợi ý:<br> Brian is preparing a brief presentation on practicing british accent.",
+          "Gợi ý:<br> Brian is preparing...",
         ],
         [
           "The president ap proved the program to protect ze bras.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson3/ex3/4.mp3",
-          "Gợi ý:<br>  The president ap proved the program to protect ze bras.",
+          "Gợi ý:<br>  The president ap...",
         ],
         [
-          "The pretty princess prefers broccoli to brown bread for breakfast",
+          "The pretty princess prefers broccoli to brown bread for breakfast.",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson3/ex3/5.mp3",
-          "Gợi ý:<br> The pretty princess prefers broccoli to brown bread for breakfast",
+          "Gợi ý:<br> The pretty...",
         ],
         [
           "I like skateboarding/ to skateboard in my free time.",
@@ -429,9 +421,8 @@ var followCourses = {
         [
           "Virtual",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Virtual",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/1.mp3",
-          "Annotation 2022-10-01 180957.png",
+          "Gợi ý:<br> Virtual",
           "ChinBacNuiRung.jpg",
         ],
         [
@@ -451,7 +442,7 @@ var followCourses = {
         [
           "Many teenagers are addicted to Facebook.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Many teenagers are addicted to Facebook.",
+          "Gợi ý:<br> Many...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/2-1.mp3",
           "Hai_co_tam.png",
         ],
@@ -465,7 +456,7 @@ var followCourses = {
         [
           "Using computers all day long can be harmful to our health.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Using computers all day long can be harmful to our health.",
+          "Gợi ý:<br> Using computers...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/3-1.mp3",
           "HiepPhan.png",
         ],
@@ -479,7 +470,7 @@ var followCourses = {
         [
           "Using computers all day long can have harmful effects on our health.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Using computers all day long can have harmful effects on our health.",
+          "Gợi ý:<br> Using computers...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/4-1.mp3",
           "MisaCute.png",
         ],
@@ -493,55 +484,55 @@ var followCourses = {
         [
           "A study finds that 91% of American teens rely on smartphones to go online.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> A study finds that 91% of American teens rely on smartphones to go online.",
+          "Gợi ý:<br> A study finds that 91%...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/5-1.mp3",
           "screenshot_1662025446.png",
         ],
         [
           "A study finds that 91% of American teens rely on smartphones to go online.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> A study finds that 91% of American teens rely on smartphones to go online.",
+          "Gợi ý:<br> A study finds that 91%...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/5-1.mp3",
           "tapthe8A6.png",
         ],
         [
-          "Ban somebody from doing something",
+          "Ban somebody from doing something.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Ban somebody from doing something",
+          "Gợi ý:<br> Ban somebody...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/6.mp3",
           "Thanh_ngu.png",
         ],
         [
           "Some parents ban their children from playing video games on weekdays.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Some parents ban their children from playing video games on weekdays.",
+          "Gợi ý:<br> Some parents ban their children...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson5/ly-thuyet/audio/6-1.mp3",
           "trungthu2022.png",
         ],
         [
           "I believe that life would be so boring without computers and the Internet.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I believe that life would be so boring without computers and the Internet.",
+          "Gợi ý:<br> I believe that...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/8.mp3",
           "Xuan_Phao.png",
         ],
         [
           "I think shopping there will be wonderful.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I think shopping there will be wonderful.",
+          "Gợi ý:<br> I think...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/9.mp3",
           "Xuan_Phao19.png",
         ],
         [
           "I'm certain that he will be satisfied with my DIY project.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I'm certain that he will be satisfied with my DIY project.",
+          "Gợi ý:<br> I'm certain...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/10.mp3",
         ],
         [
           "In my opinion, her bracelet is quite beautiful.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> In my opinion, her bracelet is quite beautiful.",
+          "Gợi ý:<br> In my opinion,...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/11.mp3",
         ],
         [
@@ -553,19 +544,19 @@ var followCourses = {
         [
           "What do you think about shopping now?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you think about shopping now?",
+          "Gợi ý:<br> What do you...?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/19.mp3",
         ],
         [
           "Do you think hanging out with friends is fun?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Do you think hanging out with friends is fun?",
+          "Gợi ý:<br> Do you think...?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/20.mp3",
         ],
         [
           "What is your view on banning the kids from computer games?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What is your view on banning the kids from computer games?",
+          "Gợi ý:<br> What is your...?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/21.mp3",
         ],
         [
@@ -637,19 +628,19 @@ var followCourses = {
         [
           "I couldn't agree with you more.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I couldn't agree with you more.",
+          "Gợi ý:<br> I couldn't...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/41.mp3",
         ],
         [
           "Do you think hanging out with friends is fun?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Do you think hanging out with friends is fun?",
+          "Gợi ý:<br> Do you think...?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/20.mp3",
         ],
         [
           "I agree with you. Meeting friends always makes me relaxed.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I agree with you. Meeting friends always makes me relaxed.",
+          "Gợi ý:<br> I agree with you...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson6/ly-thuyet/40.mp3",
         ],
         [
@@ -661,7 +652,7 @@ var followCourses = {
         [
           "Relaxing leisure activities include massage, eating out or watching sports.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Relaxing leisure activities include massage, eating out or watching sports.",
+          "Gợi ý:<br> Relaxing leisure activities...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/1-1.mp3",
         ],
         [
@@ -673,7 +664,7 @@ var followCourses = {
         [
           "Playing online games for hours is harmful to your physical health.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Playing online games for hours is harmful to your physical health.",
+          "Gợi ý:<br> Playing online games...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/3-3.mp3",
         ],
         [
@@ -685,7 +676,7 @@ var followCourses = {
         [
           "This indoor swimming pool is awesome.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> This indoor swimming pool is awesome.",
+          "Gợi ý:<br> This indoor...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/4-1.mp3",
         ],
         [
@@ -697,7 +688,7 @@ var followCourses = {
         [
           "Many teenagers stay indoors all day to surf the net.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Many teenagers stay indoors all day to surf the net.",
+          "Gợi ý:<br> Many teenagers...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/5-1.mp3",
         ],
         [
@@ -709,7 +700,7 @@ var followCourses = {
         [
           "I adore outdoor leisure activities like mountain biking.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I adore outdoor leisure activities like mountain biking.",
+          "Gợi ý:<br> I adore outdoor...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/6-1.mp3",
         ],
         [
@@ -727,13 +718,13 @@ var followCourses = {
         [
           "Jack loves to have breakfast outdoors in his beautiful garden.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Jack loves to have breakfast outdoors in his beautiful garden.",
+          "Gợi ý:<br> Jack loves to have...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/7-1.mp3",
         ],
         [
           "My favourite outdoor activity is doing people watching.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> My favourite outdoor activity is doing people watching.",
+          "Gợi ý:<br> My favourite...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/8-1.mp3",
         ],
         [
@@ -745,7 +736,7 @@ var followCourses = {
         [
           "I was hooked on this game immediately.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I was hooked on this game immediately.",
+          "Gợi ý:<br> I was hooked...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit1/lesson7/ly-thuyet/audio/9-1.mp3",
         ],
         [
@@ -842,7 +833,7 @@ var followCourses = {
         [
           "Claire's class clapped for the clumsy clown.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Claire's class clapped for the clumsy clown.",
+          "Gợi ý:<br> Claire's class...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson3/lythuyet/10.mp3",
         ],
         [
@@ -866,43 +857,43 @@ var followCourses = {
         [
           "The price in the village is cheaper than in the city.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The price in the village is cheaper than in the city.",
+          "Gợi ý:<br> The price in...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/1.mp3",
         ],
         [
           "The education in the city is better than in the village.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The education in the city is better than in the village.",
+          "Gợi ý:<br> The education...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/2.mp3",
         ],
         [
           "The price in the city is more expensive than in the village.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The price in the city is more expensive than in the village.",
+          "Gợi ý:<br> The price in the...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/3.mp3",
         ],
         [
           "The price in the city is more expensive than in the village.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The price in the city is more expensive than in the village.",
+          "Gợi ý:<br> The price in the city...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/3.mp3",
         ],
         [
           "People treat the others more kindly in the countryside than in the city.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> People treat the others more kindly in the countryside than in the city.",
+          "Gợi ý:<br> People treat the others...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/4.mp3",
         ],
         [
           "People work harder but earn less in the countryside.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> People work harder but earn less in the countryside.",
+          "Gợi ý:<br> People work harder...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/5.mp3",
         ],
         [
           "People work harder but earn less in the countryside.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> People work harder but earn less in the countryside.",
+          "Gợi ý:<br> ...the countryside.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson4/lythuyet/5.mp3",
         ],
         [
@@ -914,103 +905,103 @@ var followCourses = {
         [
           "These livestock provide owners with dairy products, meat and clothing.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> These livestock provide owners with dairy products, meat and clothing.",
+          "Gợi ý:<br> These livestock...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/1-1.mp3",
         ],
         [
           "They've just put up their tent in the middle of a vast grassland.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> They've just put up their tent in the middle of a vast grassland",
+          "Gợi ý:<br> They've just...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/2-1.mp3",
         ],
         [
           "They've just put up their tent in the middle of a vast grassland.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> They've just put up their tent in the middle of a vast grassland.",
+          "Gợi ý:<br> They've just put...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/3-1.mp3",
         ],
         [
           "A ger is the best choice for the nomadic life.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> A ger is the best choice for the nomadic life.",
+          "Gợi ý:<br> A ger is the...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/4-1.mp3",
         ],
         [
           "The nomad never stays in a city for more than two months.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The nomad never stays in a city for more than two months.",
+          "Gợi ý:<br> The nomad never...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/5-1.mp3",
         ],
         [
           "A ger is the best choice for the nomadic life.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> A ger is the best choice for the nomadic life.",
+          "Gợi ý:<br> A ger is the...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/6-1.mp3",
         ],
         [
           "The nomads often herd the camels every day.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The nomads often herd the camels every day.",
+          "Gợi ý:<br> The nomads...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/7-1.mp3",
         ],
         [
           "The Mongolian nomadic women do the housework and milk the horses.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> The Mongolian nomadic women do the housework and milk the horses.",
+          "Gợi ý:<br> The Mongolian nomadic...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson5/lythuyet/audio/8-1.mp3",
         ],
         [
           "What do you like about Mongolian nomadic life?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you like about Mongolian nomadic life?",
+          "Gợi ý:<br> What do you like..?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/7.mp3",
         ],
         [
           "I really like their living space, so free and close to nature.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I really like their living space, so free and close to nature.",
+          "Gợi ý:<br> I really like their...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/8.mp3",
         ],
         [
           "I totally agree with you. I also fancy their living environment.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> I totally agree with you. I also fancy their living environment.",
+          "Gợi ý:<br> I totally agree with you...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/9.mp3",
         ],
         [
           "Well, I adore horses and I'm very keen on riding them.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Well, I adore horses and I'm very keen on riding them.",
+          "Gợi ý:<br> Well, I adore horses...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/10.mp3",
         ],
         [
           "What do you dislike about Mongolian nomadic life?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you dislike about Mongolian nomadic life?",
+          "Gợi ý:<br> What do you..?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/17.mp3",
         ],
         [
           "Oh, I can't stand their lack of privacy.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Oh, I can't stand their lack of privacy.",
+          "Gợi ý:<br> Oh, I can't...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/18.mp3",
         ],
         [
           "Uhm, I find their way of life extremely inconvenient.",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> Uhm, I find their way of life extremely inconvenient.",
+          "Gợi ý:<br> Uhm, I find...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/19.mp3",
         ],
         [
           "What do you like about Mongolian nomadic life?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you like about Mongolian nomadic life?",
+          "Gợi ý:<br> What do you..?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/7.mp3",
         ],
         [
           "What do you dislike about Mongolian nomadic life?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you dislike about Mongolian nomadic life?",
+          "Gợi ý:<br> What do you..?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/lythuyet/17.mp3",
         ],
         [
@@ -1022,7 +1013,7 @@ var followCourses = {
         [
           "What do you like about Mongolian nomadic life?",
           "Listen, rewrite what you hear:",
-          "Gợi ý:<br> What do you like about Mongolian nomadic life?",
+          "Gợi ý:<br> What do you..?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit2/lesson6/ex3/1.mp3",
         ],
         [
@@ -1042,7 +1033,7 @@ var followCourses = {
           "According to social custom",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit4/lesson1/vocab/audio/3.mp3",
-          "Gợi ý:<br>According to social custom",
+          "Gợi ý:<br>According to...",
           "ChinBacNuiRung.jpg",
         ],
         [
@@ -1063,21 +1054,21 @@ var followCourses = {
           "Follow the tradition of doing sth",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit4/lesson1/vocab/audio/6.mp3",
-          "Gợi ý:<br>Follow the tradition of doing sth",
+          "Gợi ý:<br>Follow the...",
           "Hai_co_tam.png",
         ],
         [
           "Follow the custom of doing sth",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit4/lesson1/vocab/audio/7.mp3",
-          "Gợi ý:<br>Follow the custom of doing sth",
+          "Gợi ý:<br>...of doing sth",
           "screenshot_1662025446.png",
         ],
         [
           "Maintain the tradition of doing sth",
           "Listen, rewrite what you hear:",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit4/lesson1/vocab/audio/8.mp3",
-          "Gợi ý:<br>Maintain the tradition of doing sth",
+          "Gợi ý:<br>Maintain the...",
           "ChinBacNuiRung.jpg",
         ],
         [
@@ -1780,21 +1771,21 @@ var followCourses = {
           "What gifts do you often buy when you visit Ha Giang province?",
           "Hoàn thành câu: ...gifts do you often buy when you visit Ha Giang province? ",
           // "Dịch câu: Bạn thường mua quà tặng gì khi tới thăm tỉnh Hà Giang?",
-          "Gợi ý:<br> What gifts do you often buy when you visit Ha Giang province?",
+          "Gợi ý:<br> What gifts do you..?",
           "3",
         ],
         [
           "How long does it take to travel from Hanoi to Sapa by train?",
           "Hoàn thành câu: ...does it take to travel from Hanoi to Sapa by train?",
           // "Dịch câu: Đi tàu từ Hà Nội lên Sa Pa mất bao lâu?",
-          "Gợi ý:<br> How long does it take to travel from Hanoi to Sapa by train?",
+          "Gợi ý:<br> How long does..?",
           "3",
         ],
         [
           "What age do the minority ethnic boys and girls often get married?",
           "Hoàn thành câu: ...age do the minority ethnic boys and girls often get married?",
           // "Dịch câu: Con trai và con gái người dân tộc thiểu số thường kết hôn ở tuổi nào?",
-          "Gợi ý:<br> What age do the minority ethnic boys and girls often get married?",
+          "Gợi ý:<br> What age do..?",
           "3",
         ],
         [
@@ -1804,9 +1795,9 @@ var followCourses = {
           "3",
         ],
         [
-          "How should I go to Viet Nam Museum of Ethnology?",
+          "How should I go to Vietnam Museum of Ethnology?",
           "Đặt câu hỏi cho câu trả lời sau: You should go by bus.",
-          "Gợi ý:<br> How should I go to Viet Nam Museum of Ethnology?",
+          "Gợi ý:<br> How should I go to Vietnam Museum of Ethnology?",
           "3",
         ],
         [
@@ -1818,7 +1809,7 @@ var followCourses = {
         [
           "Do the minority ethnic people in Sapa speak English well?",
           "Đặt câu hỏi cho câu trả lời sau: Yes, they do.",
-          "Gợi ý:<br> Do the minority ethnic people in Sapa speak English well?",
+          "Gợi ý:<br> Do the minority..?",
           "3",
         ],
         [
@@ -1870,9 +1861,9 @@ var followCourses = {
           "3",
         ],
         [
-          "Viet Nam is the fatherland of many ethnic groups.",
-          "Hoàn thành: Viet Nam is ... fatherland of many ethnic groups.",
-          "Gợi ý:<br> Viet Nam is the fatherland of many ethnic groups.",
+          "Vietnam is the fatherland of many ethnic groups.",
+          "Hoàn thành: Vietnam is ... fatherland of many ethnic groups.",
+          "Gợi ý:<br> Vietnam is the fatherland of many ethnic groups.",
           "3",
         ],
         [
@@ -1906,10 +1897,10 @@ var followCourses = {
           "3",
         ],
         [
-          "How many ethnic groups are there in Viet Nam?",
+          "How many ethnic groups are there in Vietnam?",
           // "Listen, rewrite what you hear:",
           "Dịch câu: Có bao nhiêu dân tộc ở Việt Nam?",
-          "Gợi ý:<br> How many ethnic groups are there in Viet Nam?",
+          "Gợi ý:<br> How many ethnic groups are there in Vietnam?",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/1-1.mp3",
         ],
         [
@@ -1934,10 +1925,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/3-1.mp3",
         ],
         [
-          "There are 54 ethnic groups in Viet Nam among which Kinh people account for 86% of the population.",
+          "There are 54 ethnic groups in Vietnam among which Kinh people account for 86% of the population.",
           // "Listen, rewrite what you hear:",
           "Dịch câu: Có 54 dân tộc ở Việt Nam, trong đó dân tộc kinh chiếm 86% tổng dân số.",
-          "Gợi ý:<br> There are 54 ethnic groups in Viet Nam among which Kinh people account for 86% of the population.",
+          "Gợi ý:<br> There are 54 ethnic groups in Vietnam among which Kinh people account for 86% of the population.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/4-1.mp3",
         ],
         [
@@ -1955,10 +1946,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/6-1.mp3",
         ],
         [
-          "The Odu ethnic minority group has the smallest population in Viet Nam.",
+          "The Odu ethnic minority group has the smallest population in Vietnam.",
           // "Listen, rewrite what you hear:",
           "Dịch câu: Dân tộc thiểu số Ơ Đu là dân tộc có dân số ít nhất ở Việt Nam.",
-          "Gợi ý:<br> The Odu ethnic minority group has the smallest population in Viet Nam.",
+          "Gợi ý:<br> The Odu ethnic minority group has the smallest population in Vietnam.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/7-1.mp3",
         ],
         [
@@ -1969,10 +1960,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/8-1.mp3",
         ],
         [
-          "If you are curious about the ethnic peoples' customs and cultures, visit Viet Nam Museum of Ethnology.",
+          "If you are curious about the ethnic peoples' customs and cultures, visit Vietnam Museum of Ethnology.",
           // "Listen, rewrite what you hear:",
           "Dịch câu: Nếu bạn tò mò về phong tục và văn hóa của các dân tộc, hãy tới thăm bảo tàng dân tộc học Việt Nam.",
-          "Gợi ý:<br> If you are curious about the ethnic peoples' customs and cultures, visit Viet Nam Museum of Ethnology.",
+          "Gợi ý:<br> If you are curious about the ethnic peoples' customs and cultures, visit Vietnam Museum of Ethnology.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson1/vocab/audio/9-1.mp3",
         ],
         [
@@ -2025,10 +2016,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson2/vocab/audio/5-1.mp3",
         ],
         [
-          "Festivals in different regions of Viet Nam show our multicultural society.",
+          "Festivals in different regions of Vietnam show our multicultural society.",
           "Listen, rewrite what you hear:",
           // "Các lễ hội ở những vùng miền khác nhau trên đất nước Việt Nam của chúng ta thể hiện một xã hội đa văn hóa.",
-          "Gợi ý:<br> Festivals in different regions of Viet Nam show our multicultural society.",
+          "Gợi ý:<br> Festivals in different regions of Vietnam show our multicultural society.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson2/vocab/audio/6-1.mp3",
         ],
         [
@@ -2061,10 +2052,10 @@ var followCourses = {
         ],
 
         [
-          "Wet rice cultivation is common in Viet Nam.",
+          "Wet rice cultivation is common in Vietnam.",
           "Listen, rewrite what you hear:",
           // "Trồng lúa nước rất phổ biến ở Việt Nam.",
-          "Gợi ý:<br> Wet rice cultivation is common in Viet Nam.",
+          "Gợi ý:<br> Wet rice cultivation is common in Vietnam.",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson6/lythuyet/audio/1-1.mp3",
         ],
         [
@@ -2120,7 +2111,7 @@ var followCourses = {
           "They worship their ancestors and the Gods of natural environment.",
           // "Listen, rewrite what you hear:",
           "Dich câu: Họ thờ tổ tiên và các vị thần thiên nhiên.",
-          "Gợi ý:<br> They worship their ancestors and the Gods of natural environment.",
+          "Gợi ý:<br> They worship...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson6/lythuyet/audio/9-1.mp3",
         ],
 
@@ -2128,7 +2119,7 @@ var followCourses = {
           "Now, I would like to talk about the Cham people.",
           "Listen, rewrite what you hear: ",
           // "Bây giờ, tôi muốn trình bày về dân tộc chăm.",
-          "Gợi ý:<br> Now, I would like to talk about the Cham people.",
+          "Gợi ý:<br> Now, I would like...",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/1.mp3",
         ],
         [
@@ -2174,10 +2165,10 @@ var followCourses = {
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/9.mp3",
         ],
         // [
-        //   "Well, their production activities are rather diverse. Like most other groups in Viet Nam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
+        //   "Well, their production activities are rather diverse. Like most other groups in Vietnam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
         //   "Listen, rewrite what you hear: ",
         //   // "À, hoạt động sản xuất của họ khá đa dạng. Giống như hầu hết các dân tộc ở Việt Nam, họ trồng lúa nước. Bên cạnh đó, họ cũng đánh bắt cá và làm đồ thủ công. Tôi đã ấn tượng với đồ gốm thủ công của họ và tôi thích vải lụa của họ.",
-        //   "Gợi ý:<br> Well, their production activities are rather diverse. Like most other groups in Viet Nam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
+        //   "Gợi ý:<br> Well, their production activities are rather diverse. Like most other groups in Vietnam, they cultivate wet rice. Besides that, they also fish and make handicrafts. I was impressed by their hand-made pottery and I adored their silk.",
         //   "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson7/lythuyet/14.mp3",
         // ],
         [
@@ -2203,7 +2194,7 @@ var followCourses = {
         // ],
         [
           "population",
-          "With the ... of about 400, the Brau people is one of the least populous groups in Viet Nam. ",
+          "With the ... of about 400, the Brau people is one of the least populous groups in Vietnam. ",
           // "Với dân số khoảng 400 người, dân tộc Brâu là một trong những dân tộc ít dân nhất ở Việt Nam.",
           // "Gợi ý:<br> population",
           "",
@@ -2239,7 +2230,7 @@ var followCourses = {
         ],
         [
           "Around 1,200,000 people.",
-          "Trả lời: What is the population of the Hoa in Viet Nam?",
+          "Trả lời: What is the population of the Hoa in Vietnam?",
           "",
           "Gợi ý:<br> Around 1,200,000 people.",
           "",
@@ -2316,36 +2307,36 @@ var followCourses = {
         ],
         [
           "false",
-          "Listen, confirm true or false: <br> Five-coloured sticky rice is a popular dish in Southern Viet Nam.",
-          "Gợi ý:<br> Trả lời Đúng hoặc Sai bằng English",
+          "Listen, confirm true or false: <br> Five-coloured sticky rice is a popular dish in Southern Vietnam.",
+          "Gợi ý:<br>Nghe và Trả lời Đúng hoặc Sai bằng English",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson8/ex1/1.mp3",
           "",
         ],
         [
           "false",
           "Listen, confirm true or false: <br>  The dish is in nine colours.",
-          "Gợi ý:<br> Trả lời Đúng hoặc Sai bằng English",
+          "Gợi ý:<br>Nghe và Trả lời Đúng hoặc Sai bằng English",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson8/ex1/1.mp3",
           "",
         ],
         [
           "true",
           "Listen, confirm true or false: <br> Each of the colours represents an important element of life.",
-          "Gợi ý:<br> Trả lời Đúng hoặc Sai bằng English",
+          "Gợi ý:<br>Nghe và Trả lời Đúng hoặc Sai bằng English",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson8/ex1/1.mp3",
           "",
         ],
         [
           "false",
           "Listen, confirm true or false: <br> Those elements are believed to create perfect harmony for heaven, earth and animals.",
-          "Gợi ý:<br> Trả lời Đúng hoặc Sai bằng English",
+          "Gợi ý:<br>Nghe và Trả lời Đúng hoặc Sai bằng English",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson8/ex1/1.mp3",
           "",
         ],
         [
           "true",
           "Listen, confirm true or false: <br> They often prepare this dish to celebrate Tet holiday.",
-          "Gợi ý:<br> Trả lời Đúng hoặc Sai bằng English",
+          "Gợi ý:<br>Nghe và Trả lời Đúng hoặc Sai bằng English",
           "https://www.tienganh123.com/file/phothong/lop8-moi/unit3/lesson8/ex1/1.mp3",
           // "",
         ],
@@ -2637,53 +2628,55 @@ var followCourses = {
           "Gợi ý:<br> Empty barrels and insignificant people always make the most noise.",
           "trungthu2022.png",
         ],
-        [
-          "September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
-          "Hoàn thành câu: September and October is the most beautiful time to enjoy the fairy scene of ... in Hoang Su Phi, Ha Giang.",
-          "Gợi ý:<br> September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
-          "",
-          "",
-        ],
+        //         [
+        //           "September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
+        //           "Hoàn thành câu: September and October is the most beautiful time to enjoy the fairy scene of ... in Hoang Su Phi, Ha Giang.",
+        //           "Gợi ý:<br> September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
+        //           "",
+        //           "",
+        //         ],
+        //       ],
+        //     },
+        //     // {
+        //     //   id: "Unit2",
+        //     //   className: "Courses_item",
+        //     //   image: "./assets/img/Hatrang.png",
+        //     //   minReq: 10,
+        //     //   info: [
+        //     //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br> ", ""],
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: "Unit3",
+        //     //   className: "Courses_item",
+        //     //   image: "./assets/img/Xuan_Phao.png",
+        //     //   minReq: 10,
+        //     //   info: [
+        //     //     // Từ vựng căn bản:
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: "Review1-3",
+        //     //   className: "Courses_item",
+        //     //   image: "./assets/img/Hai_co_tam.png",
+        //     //   minReq: 10,
+        //     //   info: [
+        //     //     // Review  1-3
+        //     //   ],
+        //     // },
+        //     // {
+        //     //   id: "Unit4",
+        //     //   className: "Courses_item",
+        //     //   image: "./assets/img/PhotDoi.jpg",
+        //     //   minReq: 10,
+        //     //   info: [
+        //     //     // Từ vựng Unit 4:
+        //     //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+        //     //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       ],
     },
-    // {
-    //   id: "Unit2",
-    //   className: "Courses_item",
-    //   image: "./assets/img/Hatrang.png",
-    //   minReq: 10,
-    //   info: [
-    //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br> ", ""],
-    //   ],
-    // },
-    // {
-    //   id: "Unit3",
-    //   className: "Courses_item",
-    //   image: "./assets/img/Xuan_Phao.png",
-    //   minReq: 10,
-    //   info: [
-    //     // Từ vựng căn bản:
-    //   ],
-    // },
-    // {
-    //   id: "Review1-3",
-    //   className: "Courses_item",
-    //   image: "./assets/img/Hai_co_tam.png",
-    //   minReq: 10,
-    //   info: [
-    //     // Review  1-3
-    //   ],
-    // },
-    // {
-    //   id: "Unit4",
-    //   className: "Courses_item",
-    //   image: "./assets/img/PhotDoi.jpg",
-    //   minReq: 10,
-    //   info: [
-    //     // Từ vựng Unit 4:
-    //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
-    //     // ["", "Hoàn thành câu: ", "", "Gợi ý:<br>", "Xuan_Phao.png"],
-    //   ],
-    // },
   ],
   renderUnit: function () {
     const htmls = this.unitCourses.map((unitItem) => {
