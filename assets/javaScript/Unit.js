@@ -2628,55 +2628,58 @@ var followCourses = {
           "Gợi ý:<br> Empty barrels and insignificant people always make the most noise.",
           "trungthu2022.png",
         ],
-        //         [
-        //           "September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
-        //           "Hoàn thành câu: September and October is the most beautiful time to enjoy the fairy scene of ... in Hoang Su Phi, Ha Giang.",
-        //           "Gợi ý:<br> September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
-        //           "",
-        //           "",
-        //         ],
-        //       ],
-        //     },
-        //     // {
-        //     //   id: "Unit2",
-        //     //   className: "Courses_item",
-        //     //   image: "./assets/img/Hatrang.png",
-        //     //   minReq: 10,
-        //     //   info: [
-        //     //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br>", ""],
-        //     //   ],
-        //     // },
-        //     // {
-        //     //   id: "Unit3",
-        //     //   className: "Courses_item",
-        //     //   image: "./assets/img/Xuan_Phao.png",
-        //     //   minReq: 10,
-        //     //   info: [
-        //     //     // Từ vựng căn bản:
-        //     //   ],
-        //     // },
-        //     // {
-        //     //   id: "Review1-3",
-        //     //   className: "Courses_item",
-        //     //   image: "./assets/img/Hai_co_tam.png",
-        //     //   minReq: 10,
-        //     //   info: [
-        //     //     // Review  1-3
-        //     //   ],
-        //     // },
-        //     // {
-        //     //   id: "Unit4",
-        //     //   className: "Courses_item",
-        //     //   image: "./assets/img/PhotDoi.jpg",
-        //     //   minReq: 10,
-        //     //   info: [
-        //     //     // Từ vựng Unit 4:
-        //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
-        //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
-
-        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        [
+          "September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
+          "Hoàn thành câu: September and October is the most beautiful time to enjoy the fairy scene of ... in Hoang Su Phi, Ha Giang.",
+          "Gợi ý:<br> September and October is the most beautiful time to enjoy the fairy scene of terraced fields in Hoang Su Phi, Ha Giang.",
+          "",
+          "",
+        ],
       ],
     },
+
+    // 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+
+    //     // {
+    //     //   id: "Unit2",
+    //     //   className: "Courses_item",
+    //     //   image: "./assets/img/Hatrang.png",
+    //     //   minReq: 10,
+    //     //   info: [
+    //     //     // ["", "Listen, rewrite what you hear:", "Gợi ý:<br>", ""],
+    //     //   ],
+    //     // },
+    //     // {
+    //     //   id: "Unit3",
+    //     //   className: "Courses_item",
+    //     //   image: "./assets/img/Xuan_Phao.png",
+    //     //   minReq: 10,
+    //     //   info: [
+    //     //     // Từ vựng căn bản:
+    //     //   ],
+    //     // },
+    //     // {
+    //     //   id: "Review1-3",
+    //     //   className: "Courses_item",
+    //     //   image: "./assets/img/Hai_co_tam.png",
+    //     //   minReq: 10,
+    //     //   info: [
+    //     //     // Review  1-3
+    //     //   ],
+    //     // },
+    //     // {
+    //     //   id: "Unit4",
+    //     //   className: "Courses_item",
+    //     //   image: "./assets/img/PhotDoi.jpg",
+    //     //   minReq: 10,
+    //     //   info: [
+    //     //     // Từ vựng Unit 4:
+    //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+    //     //     // ["", "Hoàn thành câu:", "", "Gợi ý:<br>", "Xuan_Phao.png"],
+
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    //   ],
+    // },
   ],
   renderUnit: function () {
     const htmls = this.unitCourses.map((unitItem) => {
