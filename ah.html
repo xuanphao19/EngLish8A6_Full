@@ -3,23 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="abcde.css">
     <title>Document</title>
     <style>
       html {
         font-size: 62.5%;
         font-family: Lato, sans-serif;
+        height: 100vh;
       }
+
       #calendar {
         width: 400px;
         margin: 0px auto;
         margin-top: 80px;
       }
+
       .weeks {
         display: flex;
         width: 100%;
         font-size: 1.2rem;
         color: rebeccapurple;
       }
+
       .todays,
       .week {
         width: 14%;
@@ -30,13 +35,16 @@
         align-items: center;
         background-color: #edfff982;
       }
+
       .todays,
       .week:not(:first-child) {
         border-left: 1px solid rgba(0, 0, 0, 0.07);
       }
+
       .todays {
         color: #43b0ff;
       }
+
       .today,
       .dates {
         display: flex;
@@ -47,24 +55,33 @@
         color: rgba(51, 0, 255, 0.914);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
       }
+
       span.today {
         width: 26px;
         height: 24px;
         border-radius: 9999px;
         background: linear-gradient(180deg, rgba(94, 187, 255, 0.4), rgba(161, 116, 255, 0.4));
       }
+
       #calendar .sunday,
       #calendar .sunday span {
         background-color: #ffeaeab8;
         color: #f00;
       }
+
       #calendar .saturday,
       #calendar .saturday span {
         background-color: #f0ffed;
         color: #007021;
       }
+
+      html:hover .sign-up-btn {
+        background: red;
+      }
     </style>
+
   </head>
+
   <body>
     <section id="calendar">
       <div class="weeks">
@@ -154,5 +171,7 @@
         }
       }
     </script>
+    <script src="./j.js"></script>
   </body>
+
 </html>

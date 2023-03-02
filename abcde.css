@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 16px;
+  /* line-height: 50px; */
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+.body .action {
+  width: 118px;
+  text-align: center;
+  /* line-height: 50px; */
+  height: 49px;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+.body .action .btn {
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+}
+.body {
+  margin-top: 36px;
+  align-items: center;
+}
+/* .header .sign-up-btn {
+  min-width: 144px;
+} */
+.header .action {
+  min-width: 144px;
+}

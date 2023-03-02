@@ -156,6 +156,7 @@ var audioLists = [
   /* 8 */ "WelcomeToWonderland",
   /* 9 */ "Tieng_voTay0133",
 ];
+const newLocal = audioLists.map(function name(_params) {});
 var audioQuestions = AppElement.querySelector("#audioQuestions");
 var audioItem = AppElement.querySelector(".audioItem");
 function speakerWaves() {
